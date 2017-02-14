@@ -1,0 +1,29 @@
+
+<p>This is the partial for view 2.</p>
+
+<div  ng-show="authenticated">
+<p>
+  Registrar una Tarea:
+  <div>
+  Tarea:
+  <input id="Ta" type="text"/>
+  </div>
+  <select name="prioridad" id="Pri">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <div><button  ng-click="insertar()">Insertar</button></div>
+</p>
+</div>
+
+<div  ng-show="!authenticated">
+  <p> Not Authorizated </p>
+</div>
