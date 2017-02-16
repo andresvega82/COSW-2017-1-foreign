@@ -1,7 +1,8 @@
-com/eci/edu/controller/usersController.class
+com/eci/edu/controllers/RestClients.class
 com/eci/edu/CoswApplication$SecurityConfiguration$1.class
-com/eci/edu/modelo/TaskList.class
+com/eci/edu/entities/Tutorship.class
+com/eci/edu/services/InterfazClientes.class
+com/eci/edu/services/ManejadorClientes.class
+com/eci/edu/entities/Client.class
 com/eci/edu/CoswApplication$SecurityConfiguration.class
-com/eci/edu/modelo/Task.class
 com/eci/edu/CoswApplication.class
-com/eci/edu/controller/controladorTareas.class
