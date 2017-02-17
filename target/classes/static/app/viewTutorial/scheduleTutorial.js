@@ -1,3 +1,14 @@
-/**
- * Created by tata on 17/02/17.
- */
+'use strict';
+
+angular.module('myApp.scheduleTutorial', ['ngRoute'])
+
+    .config(['$routeProvider', function($routeProvider) {
+        $routeProvider.when('/scheduleTutorial', {
+            templateUrl: 'viewTutorial/scheduleTutorial.html',
+            controller: 'ScheduleTutorialCtrl'
+        });
+    }])
+
+    .controller('ScheduleTutorialCtrl', [function() {
+
+    }]);
