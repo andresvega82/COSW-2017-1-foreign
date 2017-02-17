@@ -4,14 +4,16 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.perfil',
-
+  'myApp.viewTutorial',
+  'myApp.viewMain',
+  'myApp.searchTutor',
   'services.fabricas',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
     $locationProvider.hashPrefix('!');
     $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-    $routeProvider.otherwise({redirectTo: '/perfil'});
+    $routeProvider.otherwise({redirectTo: '/viewMain'});
 }])
 
 .controller('appController',['$scope','$http','$location',function($scope,$http,$location){
@@ -20,7 +22,7 @@ $scope.logout = function () {
 
                 function successCallback(data){
                     $scope.authenticated = false;
-                    $location.path("/perfil");
+                    $location.path("/viewMain");
                 };
                 function errorCallback(error){
                     $scope.authenticated = false;
