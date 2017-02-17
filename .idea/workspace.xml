@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c04b7776-74f9-4f65-bfdc-09263c2ebca8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/interfaceTutorial.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/stub/TutorialStub.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/README.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/images/pic01.jpg" afterPath="" />
@@ -28,10 +25,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4_test.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/ManejadorClientes.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/stub/ManejadorClientes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestClients.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestClients.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/entities/Tutorship.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/entities/Tutorship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" />
     </list>
     <ignored path="COSW.iws" />
@@ -63,13 +57,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestTutorial.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RestTutorial.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <marker date="1487350650983" expanded="true" signature="273:304" ph="/**...*/" />
+                <marker date="1487351930963" expanded="true" signature="34:73" ph="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -108,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewTutorial.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewTutorial.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -215,13 +209,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/entities/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/stub/ManejadorClientes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/interfaceTutorial.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/stub/TutorialStub.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/entities/Tutorship.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java" />
       </list>
     </option>
   </component>
@@ -1157,12 +1151,12 @@
       <updated>1487267277397</updated>
       <workItem from="1487289480707" duration="61000" />
       <workItem from="1487289593738" duration="17989000" />
-      <workItem from="1487337226960" duration="11421000" />
+      <workItem from="1487337226960" duration="11777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29471000" />
+    <option name="totallyTimeSpent" value="29827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="1855" height="1028" extended-state="6" />
@@ -1181,12 +1175,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2933754" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2933754" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20053908" sideWeight="0.4964249" order="4" side_tool="false" content_ui="combo" />
@@ -1532,16 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <marker date="1487350650983" expanded="true" signature="273:304" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/entities/Tutorship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1563,10 +1547,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RestTutorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1487351930963" expanded="true" signature="34:73" ph="/**...*/" />
           </folding>
         </state>
       </provider>

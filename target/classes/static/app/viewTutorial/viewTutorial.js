@@ -14,4 +14,4 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
 
     .controller('ViewTutorialCtrl', [function() {
 
-}]);
+    }]);
