@@ -12,6 +12,6 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         });
     }])
 
-    .controller('ViewTutorialCtrl', [function() {
-
+    .controller('ViewTutorialCtrl', ['$scope',function($scope) {
+        console.log("SAPOO"+$scope.authenticated);
     }]);

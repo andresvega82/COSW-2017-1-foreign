@@ -1,5 +1,10 @@
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controller/controladorTareas.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controller/usersController.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/modelo/TaskList.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/CoswApplication.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/modelo/Task.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Tutorship.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\CoswApplication.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\interfaceTutorial.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\RestTutorial.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Client.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\stub\TutorialStub.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\RestClients.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\stub\ManejadorClientes.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\usersController.java
+C:\Users\ASUS\Desktop\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\InterfazClientes.java

@@ -1,3 +1,5 @@
+
+<div ng-show="authenticated">
 <p>
     VISTA DE PERFIL
 </p>
@@ -13,3 +15,11 @@
 
 </body>
 </html>
+
+</div>
+
+
+<div ng-show="!authenticated">
+<h1>No Autorizado!</h1>
+    Atentiquese <a href="#!/login">aquí</a>
+</div>

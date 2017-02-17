@@ -15,6 +15,28 @@
   content: "]";
 }
 
+#registro{
+     font-size: 200%;
+     font-weight:bold;
+     position: relative;
+     right: -45%;
+}
+
+.centrar{
+    position: absolute;
+    left:35%;
+}
+
+.centrarContenido{
+    display: list-item;
+    position: relative;
+    left: 40%;
+}
+
+#pageRegistro{
+    background: #FFFFFF;
+}
+
 .menu > li {
   display: inline;
 }

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="right-sidebar">
+
+<div id="pageRegistro" class='centrar'>
+    <h1 id="registro" >Registro</h1>
+
+        <div class="centrarContenido" >
+            <label>Nombre</label>
+            <input type="text" name="name" id="name" ng-model="datos.name" />
+        </div>
+
+        <div class="centrarContenido">
+            <label >Apellido</label>
+            <input type="text" name="apellido" id="apellido" ng-model="datos.lastname"  />
+        </div>
+
+        <div class="centrarContenido">
+            <label >Email</label>
+            <input type="text" name="email" id="email" ng-model="datos.email"  />
+        </div>
+
+        <div  class="centrarContenido" >
+            <label >Numero de Telefono</label>
+            <input type="number" name="celular" id="celular"  ng-model="datos.number"   />
+        </div>
+
+        <div class="centrarContenido">
+            <label >Pais</label>
+            <input type="text" name="pais" id="pais" ng-model="datos.country"  />
+        </div>
+
+        <div class="centrarContenido" >
+            <label >Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" ng-model="datos.password"  />
+        </div>
+
+        <div class="centrarContenido">
+            <label >Confirmar Contraseña</label>
+            <input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" />
+        </div>
+
+        <div  class="centrarContenido" >
+            <button  class="btn btn-primary" ng-click="registrar()">Registrarme</button>
+        </div>
+
+
+</div>
+</body>

@@ -3,9 +3,12 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'ngDialog',
+  'myApp.login',
   'myApp.perfil',
   'myApp.viewTutorial',
   'myApp.viewMain',
+  'myApp.viewRegistry',
   'myApp.searchTutor',
   'myApp.scheduleTutorial',
   'myApp.viewHistory',
@@ -19,17 +22,21 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
 }])
 
 .controller('appController',['$scope','$http','$location',function($scope,$http,$location){
-$scope.logout = function () {
+    $scope.logout = function () {
                 $http.post('/logout', {}).then(successCallback, errorCallback);
 
                 function successCallback(data){
+
                     $scope.authenticated = false;
+
                     $location.path("/viewMain");
+
+
                 };
                 function errorCallback(error){
                     $scope.authenticated = false;
                 };
-            };
+    };
 
 
 
