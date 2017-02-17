@@ -1,4 +1,4 @@
-package com.eci.edu.stub;
+package com.eci.edu.services;
 
 import com.eci.edu.entities.Client;
 import com.eci.edu.services.InterfazClientes;
@@ -18,18 +18,18 @@ public class ManejadorClientes implements InterfazClientes {
 
         clientes.add(cliente);
     }
-
+    @Override
     public ArrayList<Client> getClientes(){
 
-        Client fili= new Client("Juan","jehova", "correo", 654, "juan014", "brasil", "bogota","portugues" );
+        Client fili= new Client(1, "Juan","jehova", "correo", 654, "juan014", "brasil", "bogota","portugues" );
         clientes.add(fili);
         return clientes;
     }
-
-    public Client getClientePorId(String id){
+    @Override
+    public Client getClientePorId(Integer id){
         Client c=null;
 
-        Client fili= new Client("Juan","jehova", "correo", 654, "juana", "brasil", "bogota","español" );
+        Client fili= new Client(2, "Juan","jehova", "correo", 654, "juana", "brasil", "bogota","español" );
         clientes.add(fili);
         for (int i=0; i<clientes.size(); i++){
             if(clientes.get(i).getNombreUsuario().equals(id)){
