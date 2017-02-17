@@ -8,3 +8,8 @@ angular.module('myApp.viewMain', ['ngRoute'])
             controller: 'ViewMainCtrl'
         });
     }])
+
+
+    .controller('ViewMainCtrl', [function() {
+
+    }]);

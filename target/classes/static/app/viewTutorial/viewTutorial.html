@@ -2,82 +2,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Material Base Theme</title>
 
-    <!-- CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet" >
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body id="top" class="scrollspy">
-
-
-<div id="footer-wrapper">
-    <div id="footer" class="container">
-        <header class="major">
-            <h2>Nueva Tutoria</h2>
-            <p>Agenda una nueva tutoria, con cualquiera de nuestros muchos profesores.</p>
-        </header>
-        <div class="row">
-            <section class="6u 12u(narrower)">
-                <form method="post" action="#">
-
-                    <div class="row 50%">
-                        <div class="12u">
-                            <ul class="actions">
-                                <li><input type="reset" value="Hora Inicial" /></li>
-                                <li><input type="reset" value="Hora Final" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </section>
+<body class="right-sidebar">
+<div id="page-wrapper">
 
 
 
+    <!-- Main -->
+    <div class="wrapper">
+        <div class="container" id="main">
+            <div class="row 150%">
+                <div class="8u 12u(narrower)">
 
-            <section class="6u 12u(narrower)">
-                <div class="row 0%">
-                    <ul class="divided icons 6u 12u(mobile)">
-                        <li class="icon fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
-                        <li class="icon fa-facebook"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
-                        <li class="icon fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
-                    </ul>
-                    <ul class="divided icons 6u 12u(mobile)">
-                        <li class="icon fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
-                        <li class="icon fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
-                        <li class="icon fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+                    <!-- Content -->
+                    <article id="content">
+                        <header>
+                            <h2>Nueva Tutoria</h2>
+                            <p>Encuentra el mejor tutor y practica cualquier idioma que desees, con personas de habla nativo.</p>
+                        </header>
+                        <h3>Escoge el Idioma que deseas practicar</h3>
+                        <ul class="actions">
+                            <select>
+                                <option value="" selected="selected">- seleccionar -</option>
+                                <option value="language">English</option>
+                                <option value="language">Español</option>
+                                <option value="language">Portugues</option>
+                                <option value="language">Deutsch</option>
+                            </select>
+                        </ul>
+                        <h3>Escoge el Horario</h3>
+                        <ul class="actions">
+                            <li> Fecha</li>
+                            <li><input type="date" value="fecha Inicio" /></li>
+                        </ul>
+                        <ul class="actions">
+                            <li> Hora Inicial</li>
+                            <li><input type="time" name="hora"></li>
+                            <li> Hora Final</li>
+                            <li><input type="time" name="hora"></li>
+                        </ul>
+                    </article>
+                    <ul class="actions">
+                        <li><a href="#!/searchTutor" class="button">Buscar tutor</a></li>
                     </ul>
                 </div>
-            </section>
+                <div class="4u 12u(narrower)">
 
+                    <!-- Sidebar -->
+                    <section id="sidebar">
+                        <section>
+                            <header>
+                                <h3>Recuerda que...</h3>
+                            </header>
+                            <p>Por medio de esta aplicación tu podras reunirte con personas de todo el mundo, todo esto
+                            con la idea de afianzar tus habilidades en aquella lengua que estas aprendiendo y quieres practicar
+                            de una manera menos academica.</p>
+                        </section>
+                        <section>
+                            <a class="image featured"><img src="images/photo1.jpg" alt="" /></a>
+                            <header>
+                                <h3>Has nuevos amigos</h3>
+                            </header>
+                            <p>Y solo tu decides a que hora y en que lugar se pueden encontrar con tu tutor y no estar encerrados
+                                en un salon de clase, convirtiendo la conversación en algo mucho mas relajada y divertida para
+                                tu aprendizaje.</p>
+                        </section>
+                    </section>
+
+                </div>
+            </div>
         </div>
-        <header>
-            <ul class="actions">
-                <li><a href="#!/searchTutor" class="button">Buscar un tutor</a></li>
+        <div id="copyright" class="container">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li><li>Design: Sebastian Amaya, Nicolas Morenos, Tatiana Higuera, Juan Gutierrez, Andres Vega, Nicolas Guzman.</li>
             </ul>
-        </header>
-    </div>
-
-
-
-
-
-    <div id="copyright" class="container">
-        <ul class="menu">
-            <li>&copy; Untitled. All rights reserved.</li><li>Design: Sebastian Amaya, Nicolas Morenos, Tatiana Higuera, Juan Gutierrez, Andres Vega, Nicolas Guzman.
-        </ul>
+        </div>
     </div>
 </div>
 
-</div>
+<!-- Scripts -->
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
