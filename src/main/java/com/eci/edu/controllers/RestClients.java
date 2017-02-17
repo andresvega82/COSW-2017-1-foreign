@@ -1,14 +1,13 @@
 package com.eci.edu.controllers;
 
 import com.eci.edu.entities.Client;
-import com.eci.edu.services.ManejadorClientes;
+import com.eci.edu.stub.ManejadorClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 /**
  * Created by 2098165 on 2/16/17.

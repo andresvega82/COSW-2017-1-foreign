@@ -1,6 +1,7 @@
-package com.eci.edu.services;
+package com.eci.edu.stub;
 
 import com.eci.edu.entities.Client;
+import com.eci.edu.services.InterfazClientes;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
  * Created by 2098165 on 2/16/17.
  */
 @Service
-public class ManejadorClientes implements InterfazClientes{
+public class ManejadorClientes implements InterfazClientes {
 
     public ArrayList<Client> clientes = new ArrayList<>();
 
