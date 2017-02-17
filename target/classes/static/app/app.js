@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.viewMain',
   'myApp.searchTutor',
   'myApp.scheduleTutorial',
+  'myApp.viewHistory',
   'services.fabricas',
   'myApp.version'
 ]).

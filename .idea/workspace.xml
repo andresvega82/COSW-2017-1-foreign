@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c04b7776-74f9-4f65-bfdc-09263c2ebca8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/README.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/images/pic01.jpg" afterPath="" />
@@ -25,11 +27,18 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/view4/view4_test.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/app.js" afterPath="$PROJECT_DIR$/src/main/resources/static/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.js" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" afterPath="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/app.js" afterPath="$PROJECT_DIR$/target/classes/static/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/index.html" afterPath="$PROJECT_DIR$/target/classes/static/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/scheduleTutorial.html" afterPath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/scheduleTutorial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/searchTutor.html" afterPath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/searchTutor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/viewTutorial.js" afterPath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/viewTutorial.js" />
     </list>
     <ignored path="COSW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,21 +62,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="44" />
+            <state relative-caret-position="404">
+              <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
               <folding>
-                <marker date="1487340970051" expanded="true" signature="2060:3327" ph="..." />
+                <marker date="1487345329943" expanded="true" signature="2060:3380" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewMain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewMain/viewMain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -75,31 +74,36 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewMain.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewMain/viewMain.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewTutorial.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viewTutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            <state relative-caret-position="495">
+              <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
               <folding>
-                <marker date="1487340049119" expanded="true" signature="2357:2514" ph="..." />
-                <marker date="1487340049119" expanded="true" signature="4127:4139" ph="..." />
+                <marker date="1487348131835" expanded="true" signature="1744:1894" ph="..." />
+                <marker date="1487348131835" expanded="true" signature="2386:2555" ph="..." />
+                <marker date="1487348131835" expanded="true" signature="4198:4210" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewTutorial.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+                <marker date="1487342759019" expanded="true" signature="370:383" ph="[...]" />
+                <marker date="1487342759019" expanded="true" signature="382:383" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -108,18 +112,41 @@
       <file leaf-file-name="searchTutor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="389">
+              <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="68" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduleTutorial.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scheduleTutorial.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="795">
+              <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+              <folding>
+                <marker date="1487347609951" expanded="true" signature="2354:2812" ph="..." />
+                <marker date="1487347609951" expanded="true" signature="2483:2811" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewHistory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewHistory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,19 +204,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/app/services/services.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/perfil/perfil.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/ManejadorClientes.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial_test.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/perfil/perfil.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewSearchTutor.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewMain/viewMain.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewMain/viewMain.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/app/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/app/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/app.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html" />
       </list>
     </option>
   </component>
@@ -392,6 +421,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="viewMain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COSW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COSW-2017-1-foreign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewHistory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1001,12 +1064,12 @@
       <updated>1487267277397</updated>
       <workItem from="1487289480707" duration="61000" />
       <workItem from="1487289593738" duration="17989000" />
-      <workItem from="1487337226960" duration="3778000" />
+      <workItem from="1487337226960" duration="8542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21828000" />
+    <option name="totallyTimeSpent" value="26592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1101,23 +1164,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/services/InterfazClientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/services/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/perfil/perfil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1130,7 +1176,7 @@
         <state relative-caret-position="585">
           <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
-            <marker date="1487340970051" expanded="true" signature="2060:3327" ph="..." />
+            <marker date="1487345329943" expanded="true" signature="2060:3380" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1303,13 +1349,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/images/pic03.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/images/pic04.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/images/pic07.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1350,20 +1389,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="44" />
-          <folding>
-            <marker date="1487340970051" expanded="true" signature="2060:3327" ph="..." />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/app.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1376,38 +1413,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewHistory/viewHistory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
-            <marker date="1487340049119" expanded="true" signature="2357:2514" ph="..." />
-            <marker date="1487340049119" expanded="true" signature="4127:4139" ph="..." />
+            <marker date="1487345329943" expanded="true" signature="2060:3380" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/searchTutor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="43" selection-end-column="26" />
+        <state relative-caret-position="389">
+          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="68" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/scheduleTutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="795">
+          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <marker date="1487347609951" expanded="true" signature="2354:2812" ph="..." />
+            <marker date="1487347609951" expanded="true" signature="2483:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <marker date="1487342759019" expanded="true" signature="370:383" ph="[...]" />
+            <marker date="1487342759019" expanded="true" signature="382:383" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/app/viewTutorial/viewTutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+          <folding>
+            <marker date="1487348131835" expanded="true" signature="1744:1894" ph="..." />
+            <marker date="1487348131835" expanded="true" signature="2386:2555" ph="..." />
+            <marker date="1487348131835" expanded="true" signature="4198:4210" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
