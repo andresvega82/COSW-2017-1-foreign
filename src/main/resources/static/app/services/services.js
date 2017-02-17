@@ -13,7 +13,10 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
     //tutorias
     .factory('tutorial', function($resource) {
         return $resource('/tutorial',{},
-            { get: { method: 'GET', isArray: true}});
+            { get: {
+                method: 'GET',
+                isArray: true
+        }});
     })
 
 

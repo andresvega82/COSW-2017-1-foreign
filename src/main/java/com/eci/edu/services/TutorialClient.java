@@ -1,7 +1,7 @@
 package com.eci.edu.services;
 
-
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 import com.eci.edu.entities.Tutorial;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +21,10 @@ public class TutorialClient implements interfaceTutorial{
     }
     @Override
     public ArrayList<Tutorial> getTutorials(){
+        Date date = new Date();
+        Tutorial t = new Tutorial("English", date, date, 20, 1, 1);
+        tutorials.add(t);
+        System.out.println("Entro hasta tutoria del cliente"+ tutorials.size());
         return tutorials;
     }
     @Override

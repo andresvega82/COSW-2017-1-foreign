@@ -12,7 +12,7 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         });
     }])
 
-    .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'user', function($scope, $rootScope,$http,$resource,user) {
+    .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'tutorial', function($scope, $rootScope, $http, $resource, tutorial) {
         $scope.userId = null;
         $scope.newTutorial = false;
         $scope.tutorialId = null;
@@ -27,21 +27,21 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         $scope.registrarTutoria = function(){
             console.log("ENTROOO!!!!!")
             $scope.busy=true;
-            tutorial.get( {iduser:""+$scope.userId})
 
+            tutorial.get()
                 .$promise.then(
                 //success
                 function( value ){
-                    alert("Ya existe un usuario con ID: "+$scope.userId+"!!!");
+                    for(var i=0;i<value.length; i++){
+                        if((value[i].home==true)||(value[i].home==false)){
+                            $scope.parkListAll.push(value[i]);
+                        }
+                    }
+                    $scope.parkListFiltered=$scope.parkListAll.slice(0);
                     $scope.busy=false;
                 },
                 //error
                 function( error ){
-                    var newitem={"firstName":$scope.FirstName,"lastName":$scope.LastName,
-                        "id":$scope.userId, "email": $scope.email, "address":$scope.address, "phone":$scope.phone,
-                        "password": $scope.password};
-                    tutorial.save(newitem,function(){});
-                    alert("El usuario con el ID: "+$scope.userId+" fue creado satisfactoriamente!!!");
 
                 }
             );

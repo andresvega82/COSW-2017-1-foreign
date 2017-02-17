@@ -33,6 +33,8 @@ public class CoswApplication {
 		SpringApplication.run(CoswApplication.class, args);
 	}
 
+
+
 	@Configuration
 	@EnableGlobalMethodSecurity(prePostEnabled = true)
 	@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
@@ -49,7 +51,7 @@ public class CoswApplication {
 					.httpBasic()
 					.and()
 					.authorizeRequests()
-					.antMatchers("/app/**","/logout","/login").permitAll()
+					.antMatchers("/app/**","/tutorial/**","/clients/**","/logout","/login").permitAll()
 					.anyRequest().authenticated().and()
 					.logout().logoutSuccessUrl("/")
 					.and().csrf()
