@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by 2098165 on 2/16/17.
  */
 public class Client {
-
+    private Integer id;
     private String nombre;
     private String apellido;
     private String correo;
@@ -16,10 +16,11 @@ public class Client {
     private String lugarResidencia;
     private String lenguaMaterna;
     private ArrayList<String> idiomasAprender;
-    private ArrayList<Tutorship> tutorias;
+    private ArrayList<Tutor> tutorias;
     private String descripcion= null;
 
-    public Client(String nombre, String apellido, String correo, Integer telefono, String nombreUsuario, String paisNacimiento, String lugarResidencia, String lenguaMaterna){
+    public Client(Integer id, String nombre, String apellido, String correo, Integer telefono, String nombreUsuario, String paisNacimiento, String lugarResidencia, String lenguaMaterna){
+        this.id = id;
         this.nombre=nombre;
         this.apellido=apellido;
         this.correo=correo;
@@ -29,7 +30,15 @@ public class Client {
         this.lugarResidencia=lugarResidencia;
         this.lenguaMaterna=lenguaMaterna;
         idiomasAprender= new ArrayList<String>();
-        tutorias=new ArrayList<Tutorship>();
+        tutorias=new ArrayList<Tutor>();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id= id;
     }
 
     public String getNombre() {
@@ -112,11 +121,11 @@ public class Client {
         this.descripcion = descripcion;
     }
 
-    public ArrayList<Tutorship> getTutorias() {
+    public ArrayList<Tutor> getTutorias() {
         return tutorias;
     }
 
-    public void setTutorias(ArrayList<Tutorship> tutorias) {
+    public void setTutorias(ArrayList<Tutor> tutorias) {
         this.tutorias = tutorias;
     }
 }

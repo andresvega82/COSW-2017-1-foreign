@@ -1,7 +1,7 @@
 package com.eci.edu.controllers;
 
 import com.eci.edu.entities.Client;
-import com.eci.edu.stub.ManejadorClientes;
+import com.eci.edu.services.InterfazClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,8 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping(value ="/clients")
 public class RestClients {
-
-
     @Autowired
-    ManejadorClientes manejador;
+    private InterfazClientes manejador;
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addClient(@RequestBody Client cliente) throws Exception{
@@ -36,8 +34,10 @@ public class RestClients {
     /*
      @return Obtiene un cliente en particular
      */
+
     @RequestMapping(value ="/{id}", method = RequestMethod.GET)
-    public Client getParticularClient(@PathVariable("id") String id) throws Exception {
+    public Client getParticularClient(@PathVariable("id") Integer id) throws Exception {
+        System.out.println("entro en el java rest get usuario");
         return manejador.getClientePorId(id);
     }
 

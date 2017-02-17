@@ -10,8 +10,14 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
                 });
 
             })
+    //tutorias
+    .factory('tutorial', function($resource) {
+        return $resource('/tutorial',{},
+            { get: { method: 'GET', isArray: true}});
+    })
+
 
     .factory('clientById', function($resource) {
-            return $resource('/clients/:id',{id:"@_id"},{'get': { method: 'GET'}});
+        return $resource('/clients/:id',{id:"@_id"},{'get': { method: 'GET'}});
     });
 

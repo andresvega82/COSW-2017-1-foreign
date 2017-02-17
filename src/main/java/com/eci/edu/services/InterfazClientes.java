@@ -11,5 +11,5 @@ public interface InterfazClientes {
 
     void registrarCliente(Client cliente);
     ArrayList<Client> getClientes();
-    Client getClientePorId(String id);
+    Client getClientePorId(Integer id);
 }
