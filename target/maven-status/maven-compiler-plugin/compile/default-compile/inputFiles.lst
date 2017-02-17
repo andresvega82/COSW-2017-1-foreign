@@ -1,5 +1,10 @@
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controller/controladorTareas.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controller/usersController.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/modelo/TaskList.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/CoswApplication.java
-/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/modelo/Task.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/interfaceTutorial.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/RestClients.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/CoswApplication.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Tutorial.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/TutorialClient.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/ManejadorClientes.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/RestTutorial.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/InterfazClientes.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Client.java
+/home/local/LABINFO/2100772/Documents/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Tutor.java
