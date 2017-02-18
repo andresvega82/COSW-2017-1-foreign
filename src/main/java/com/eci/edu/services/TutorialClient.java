@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
 public class TutorialClient implements interfaceTutorial{
 
 
-    private ArrayList<Tutorial> tutorials = new ArrayList<Tutorial>();
+    private List<Tutorial> tutorials = new ArrayList<Tutorial>();
 
     public void updateTutorial(Tutorial t){
 
     }
     @Override
-    public ArrayList<Tutorial> getTutorials(){
+    public List<Tutorial> getTutorials(){
         Date date = new Date();
         Tutorial t = new Tutorial("English", date, date, 20, 1, 1);
         tutorials.add(t);
@@ -32,7 +32,7 @@ public class TutorialClient implements interfaceTutorial{
         tutorials.add(t);
     }
     @Override
-    public ArrayList<Tutorial> getTutorialByUserId(Integer id){
+    public List<Tutorial> getTutorialByUserId(Integer id){
         return null;
     }
 }

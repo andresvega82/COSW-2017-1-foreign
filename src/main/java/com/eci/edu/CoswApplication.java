@@ -42,12 +42,6 @@ public class CoswApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoswApplication.class, args);
 	}
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 38d387403a4d615301877f5df61fe1af988bcb59
 	@Configuration
 	@EnableGlobalMethodSecurity(prePostEnabled = true)
 	@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)

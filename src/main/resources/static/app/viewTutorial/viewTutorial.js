@@ -11,44 +11,32 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
             controller: 'ViewTutorialCtrl'
         });
     }])
-
-<<<<<<< HEAD
     .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'tutorial', function($scope, $rootScope, $http, $resource, tutorial) {
-=======
-
-    .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'user', function($scope, $rootScope,$http,$resource,user) {
->>>>>>> 38d387403a4d615301877f5df61fe1af988bcb59
         $scope.userId = null;
         $scope.newTutorial = false;
         $scope.tutorialId = null;
-        $scope.lenguaje = "";
+        $scope.languaje = "";
         $scope.date = "";
         $scope.hour = "";
         $scope.timeHour = null;
         $scope.timeMin = null;
         $scope.busy = false;
+        $scope.tutorialListAll = []
 
-
-        $scope.registrarTutoria = function(){
-            console.log("ENTROOO!!!!!")
-            $scope.busy=true;
-
-            tutorial.get()
-                .$promise.then(
-                //success
-                function( value ){
-                    for(var i=0;i<value.length; i++){
-                        if((value[i].home==true)||(value[i].home==false)){
-                            $scope.parkListAll.push(value[i]);
-                        }
-                    }
-                    $scope.parkListFiltered=$scope.parkListAll.slice(0);
-                    $scope.busy=false;
-                },
-                //error
-                function( error ){
-
+        tutorial.get()
+            .$promise.then(
+            //success
+            function( value ){
+                for(var i=0;i<value.length; i++){
+                        $scope.tutorialListAll.push(value[i]);
                 }
-            );
-        };
+                $scope.busy=false;
+            },
+            //error
+            function( error ){
+                console.log(error)
+            }
+        );
+
+
     }]);
