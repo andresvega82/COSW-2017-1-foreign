@@ -5,11 +5,14 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="right-sidebar">
-<div id="page-wrapper">
+<div id="page-wrapper" ng-show="authenticated">
      <!-- Main -->
     <div class="wrapper">
         <div class="container" id="main">
@@ -89,6 +92,8 @@
     </div>
 </div>
 
+
+
 <!-- Scripts -->
 
 <script src="assets/js/jquery.min.js"></script>
@@ -100,3 +105,11 @@
 
 </body>
 </html>
+
+
+<div ng-show="!authenticated">
+    <h1>No Autorizado!</h1>
+    Atentiquese <a href="#!/login">aquí</a>
+</div>
+
+

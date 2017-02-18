@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Telephasic by HTML5 UP</title>
@@ -9,7 +10,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
 <body class="no-sidebar">
-<div id="page-wrapper">
+<div id="page-wrapper" ng-show="authenticated">
     <!-- Main -->
     <div class="wrapper">
         <center>
@@ -88,3 +89,9 @@
 
 </body>
 </html>
+
+
+<div ng-show="!authenticated">
+    <h1>No Autorizado!</h1>
+    Atentiquese <a href="#!/login">aquí</a>
+</div>

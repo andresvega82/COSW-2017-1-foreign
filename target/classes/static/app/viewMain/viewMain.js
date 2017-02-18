@@ -10,6 +10,6 @@ angular.module('myApp.viewMain', ['ngRoute'])
     }])
 
 
-    .controller('ViewMainCtrl', [function() {
+    .controller('ViewMainCtrl', ['$scope','ngDialog',function($scope,ngDialog) {
 
     }]);
