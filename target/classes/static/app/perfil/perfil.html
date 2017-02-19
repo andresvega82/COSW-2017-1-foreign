@@ -1,9 +1,6 @@
 
 
-<div ng-show="authenticated">
-<p>
-    VISTA DE PERFIL
-</p>
+
 <!DOCTYPE HTML>
 <!--
 	Telephasic by HTML5 UP
@@ -21,7 +18,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
 <body class="no-sidebar">
-<div id="page-wrapper">
+<div id="page-wrapper" ng-show="authenticated">
     <!-- Main -->
     <div class="wrapper">
         <div class="container" id="main">
@@ -67,6 +64,20 @@
 
 </div>
 
+<div ng-show="!authenticated">
+    <div id="header-wrapper">
+        <!-- Hero -->
+        <section id="hero" class="container">
+            <header>
+                <h2>NO AUTORIZADO
+                    <br />
+                    Atentiquese <a href="#!/login">aquí</a>
+                </h2>
+            </header>
+        </section>
+    </div>
+</div>
+
 <!-- Scripts -->
 
 <script src="assets/js/jquery.min.js"></script>
@@ -79,10 +90,4 @@
 </body>
 </html>
 
-</div>
 
-
-<div ng-show="!authenticated">
-<h1>No Autorizado!</h1>
-    Atentiquese <a href="#!/login">aquí</a>
-</div>

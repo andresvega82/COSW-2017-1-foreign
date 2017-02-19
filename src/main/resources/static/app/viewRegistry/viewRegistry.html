@@ -1,55 +1,67 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link href="app.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
+<body>
 
-<body class="right-sidebar">
-
-<div id="pageRegistro" class='centrar'>
-    <h1 id="registro" >Registro</h1>
-
-        <div class="centrarContenido" >
-            <label>Nombre</label>
-            <input type="text" name="name" id="name" ng-model="datos.name" />
-        </div>
-
-        <div class="centrarContenido">
-            <label >Apellido</label>
-            <input type="text" name="apellido" id="apellido" ng-model="datos.lastname"  />
-        </div>
-
-        <div class="centrarContenido">
-            <label >Email</label>
-            <input type="text" name="email" id="email" ng-model="datos.email"  />
-        </div>
-
-        <div  class="centrarContenido" >
-            <label >Numero de Telefono</label>
-            <input type="number" name="celular" id="celular"  ng-model="datos.number"   />
-        </div>
-
-        <div class="centrarContenido">
-            <label >Pais</label>
-            <input type="text" name="pais" id="pais" ng-model="datos.country"  />
-        </div>
-
-        <div class="centrarContenido" >
-            <label >Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña" ng-model="datos.password"  />
-        </div>
-
-        <div class="centrarContenido">
-            <label >Confirmar Contraseña</label>
-            <input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" />
-        </div>
-
-        <div  class="centrarContenido" >
-            <button  class="btn btn-primary" ng-click="registrar()">Registrarme</button>
-        </div>
-
-
+<div id="header-wrapper">
+    <!-- Hero -->
+    <section id="hero" class="container">
+        <header>
+            <h2>REGISTRO<br /></h2>
+        </header>
+        <ul class="actions">
+            <li> Nombre</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="text" name="name" id="name" ng-model="datos.name" /></li>
+        </ul>
+        <ul class="actions">
+            <li> Apellidos</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="text" name="apellido" id="apellido" ng-model="datos.lastname"  /></li>
+        </ul>
+        <ul class="actions">
+            <li>Email</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="text" name="email" id="email" ng-model="datos.email"  /></li>
+        </ul>
+        <ul class="actions">
+            <li>Numero de Telefono</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="number" name="celular" id="celular"  ng-model="datos.number"   /></li>
+        </ul>
+        <ul class="actions">
+            <li>País</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="text" name="pais" id="pais" ng-model="datos.country"  /></li>
+        </ul>
+        <ul class="actions">
+            <li>Contraseña</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="password" name="contraseña" id="contraseña" ng-model="datos.password"  /></li>
+        </ul>
+        <ul class="actions">
+            <li>Confirmar Contraseña</li>
+        </ul>
+        <ul class="actions">
+            <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" /></li>
+        </ul>
+        <ul class="actions">
+            <button ng-click="registrar()">Registrarme</button>
+        </ul>
+    </section>
 </div>
 </body>
+
+</html>

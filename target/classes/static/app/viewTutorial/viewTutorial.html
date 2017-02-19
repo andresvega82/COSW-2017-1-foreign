@@ -98,7 +98,19 @@
     </div>
 </div>
 
-
+<div ng-show="!authenticated">
+    <div id="header-wrapper">
+        <!-- Hero -->
+        <section id="hero" class="container">
+            <header>
+                <h2>NO AUTORIZADO
+                    <br />
+                    Atentiquese <a href="#!/login">aquí</a>
+                    </h2>
+            </header>
+        </section>
+    </div>
+</div>
 
 <!-- Scripts -->
 
@@ -113,9 +125,5 @@
 </html>
 
 
-<div ng-show="!authenticated">
-    <h1>No Autorizado!</h1>
-    Atentiquese <a href="#!/login">aquí</a>
-</div>
 
 
