@@ -25,16 +25,14 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
 
 
         $scope.getAll=function(){
-
-        $scope.tutoriales=tutorial.query();
-        console.info($scope.tutoriales[0]);
-        /**
         tutorial.get()
                     .$promise.then(
                     //success
+
                     function( value ){
                         for(var i=0;i<value.length; i++){
                                 $scope.tutorialListAll.push(value[i]);
+                                console.info(value[i]);
                         }
                         $scope.busy=false;
                     },
@@ -43,7 +41,7 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
                         console.log(error)
                     }
               );
-*/
+
         };
 
 
