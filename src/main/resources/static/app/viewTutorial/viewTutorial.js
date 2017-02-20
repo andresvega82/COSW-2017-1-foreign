@@ -23,20 +23,29 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         $scope.busy = false;
         $scope.tutorialListAll = []
 
+
+        $scope.getAll=function(){
+
+        $scope.tutoriales=tutorial.query();
+        console.info($scope.tutoriales[0]);
+        /**
         tutorial.get()
-            .$promise.then(
-            //success
-            function( value ){
-                for(var i=0;i<value.length; i++){
-                        $scope.tutorialListAll.push(value[i]);
-                }
-                $scope.busy=false;
-            },
-            //error
-            function( error ){
-                console.log(error)
-            }
-        );
+                    .$promise.then(
+                    //success
+                    function( value ){
+                        for(var i=0;i<value.length; i++){
+                                $scope.tutorialListAll.push(value[i]);
+                        }
+                        $scope.busy=false;
+                    },
+                    //error
+                    function( error ){
+                        console.log(error)
+                    }
+              );
+*/
+        };
+
 
 
     }]);

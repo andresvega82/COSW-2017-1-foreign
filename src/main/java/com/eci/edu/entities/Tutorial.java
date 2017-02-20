@@ -6,6 +6,54 @@ import java.util.Date;
  * Created by tata on 17/02/17.
  */
 public class Tutorial {
+    public String getLanguaje() {
+        return languaje;
+    }
+
+    public void setLanguaje(String languaje) {
+        this.languaje = languaje;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public int getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+
+    public int getIdTutor() {
+        return idTutor;
+    }
+
+    public void setIdTutor(int idTutor) {
+        this.idTutor = idTutor;
+    }
+
     private String languaje;
     private Date date;
     private Date startTime;

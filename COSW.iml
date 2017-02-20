@@ -22,7 +22,7 @@
     <orderEntry type="library" name="Maven: io.projectreactor.addons:reactor-test:3.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:2.0.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:4.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:http-client:1.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
