@@ -32,7 +32,7 @@ public class TutorialController {
     @RequestMapping(method = RequestMethod.POST)
     public void saveTutorial(@RequestBody Tutorial tutorial){
         System.out.println("LLEGO AL POST!");
-        System.out.println("entro"+ tutorial.getLanguaje()+"   "+ tutorial.getDate());
+        System.out.println("entro guardar una tutoria api"+ tutorial.getLanguaje()+"   "+ tutorial.getDate());
         try {
             services.addTutorial(tutorial);
         } catch (Exception e) {
