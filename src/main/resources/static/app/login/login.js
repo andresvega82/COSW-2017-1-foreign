@@ -20,7 +20,6 @@ angular.module('myApp.login', ['ngRoute'])
         function successCallback(data){
             if (data.data.name) {
                 $scope.authenticated = true;
-                console.log("entro if 1");
             }else {
                 $scope.authenticated = false;
             }
@@ -28,7 +27,6 @@ angular.module('myApp.login', ['ngRoute'])
         }
 
         function errorCallback(error){
-         console.log("entro errorCallback");
             $scope.authenticated = false;
              callback && callback();
         }

@@ -12,6 +12,7 @@ angular.module('myApp.viewRegistry', ['ngRoute'])
     .controller('viewRegistryCtrl', ['$scope', '$location',function($scope,$location) {
         $scope.datos = {};
         $scope.registrar = function (){
+
             $location.path("/login");
         }
     }]);

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.amqp:spring-amqp:2.0.0.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170220.174717-131.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170221.154416-132.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170220.174717-131-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170221.154416-132-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170220.174717-131-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.0.BUILD-SNAPSHOT/spring-amqp-2.0.0.BUILD-20170221.154416-132-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

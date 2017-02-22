@@ -50,6 +50,10 @@ public class CoswApplication {
 		@Override
 		protected void configure(AuthenticationManagerBuilder builder) throws Exception {
 			builder.inMemoryAuthentication().withUser("user").password("password").roles("USER");
+			builder.inMemoryAuthentication().withUser("andres@mail.com").password("12345").roles("USER");
+			builder.inMemoryAuthentication().withUser("nicolas@mail.com").password("nicolas").roles("USER");
+			builder.inMemoryAuthentication().withUser("tatiana@mail.com").password("tatiana").roles("USER");
+			builder.inMemoryAuthentication().withUser("sebastian@mail.com").password("sebastian").roles("USER");
 		}
 
 		@Override

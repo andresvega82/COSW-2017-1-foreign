@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.integration:spring-integration-amqp:5.0.0.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170218.141804-192.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170221.174738-193.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170218.141804-192-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170221.174738-193-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170218.141804-192-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-amqp/5.0.0.BUILD-SNAPSHOT/spring-integration-amqp-5.0.0.BUILD-20170221.174738-193-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,6 +1,7 @@
 package com.eci.edu.controllers;
 
 import com.eci.edu.entities.Client;
+import com.eci.edu.entities.User;
 import com.eci.edu.services.InterfazClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -39,6 +40,15 @@ public class RestClients {
     public Client getParticularClient(@PathVariable("id") Integer id) throws Exception {
         System.out.println("entro en el java rest get usuario");
         return manejador.getClientePorId(id);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/register")
+    public ResponseEntity<?> register(@RequestBody String params) throws Exception{
+        params = params.substring(1,params.length()-1);
+        String[] userParams = params.split(",");
+        User user = new User(userParams[1],userParams[2],userParams[3],userParams[4],userParams[5],userParams[6]);
+        if(!manejador.registerUser(user) || !userParams[7].equals(userParams[6]))return new ResponseEntity<>(HttpStatus.CONFLICT);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 }
