@@ -12,12 +12,10 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         });
     }])
 
-<<<<<<< HEAD
-    .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'tutorial', function($scope, $rootScope, $http, $resource, tutorial) {
-=======
+
 
     .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'user', function($scope, $rootScope,$http,$resource,user) {
->>>>>>> 38d387403a4d615301877f5df61fe1af988bcb59
+
         $scope.userId = null;
         $scope.newTutorial = false;
         $scope.tutorialId = null;
