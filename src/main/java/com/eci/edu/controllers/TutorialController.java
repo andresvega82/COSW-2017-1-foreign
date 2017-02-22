@@ -24,7 +24,7 @@ public class TutorialController {
     private interfaceTutorial services;
 
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value = "/tutorials")
     public ResponseEntity<?> getTutorials(){
         return new ResponseEntity<>(services.getTutorials(), HttpStatus.ACCEPTED);
     }
