@@ -27,7 +27,7 @@
                     <p>Selecciona a uno de nuestros profesores.</p>
                 </header>
             </article>
-
+            <!--
             <div class="row features">
                 <section class="4u 12u(narrower) feature">
                     <div class="image-wrapper first">
@@ -39,7 +39,7 @@
                     <p>Want to learn fast & have fun? I teach English/ French using music/film/
                         poetry/jornalism! Contact me to speed up your learning!.</p>
                     <ul class="actions">
-                        <li><a href="#!/scheduleTutorial" class="button">Agendar tutoria</a></li>
+                        <li><a href="#!/scheduleTutorial" class="button">Seleccionar</a></li>
                     </ul>
                 </section>
                 <section class="4u 12u(narrower) feature">
@@ -52,7 +52,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
                         vel sem sit dolor neque semper magna lorem ipsum.</p>
                     <ul class="actions">
-                        <li><a href="#!/scheduleTutorial" class="button">Agendar tutoria</a></li>
+                        <li><a href="#!/scheduleTutorial" class="button">Seleccionar</a></li>
                     </ul>
                 </section>
                 <section class="4u 12u(narrower) feature">
@@ -65,10 +65,34 @@
                     <p>Want to learn fast & have fun? I teach English/ French using music/film/
                         poetry/jornalism! Contact me to speed up your learning!.</p>
                     <ul class="actions">
-                        <li><a href="#!/" class="button">Agendar tutoria</a></li>
+                        <li><a href="#!/" class="button">Seleccionar</a></li>
                     </ul>
                 </section>
             </div>
+            -->
+
+            <div>
+                <table class="table table-striped table-hover">
+                    <tbody>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Descripcion</th>
+                        <th>Selección</th>
+                    </tr>
+                    <tr ng-repeat="todo in tutoresListAll">
+                        <td>{{todo.name}}</td>
+                        <td>{{todo.age}}</td>
+                        <td>{{todo.description}}</td>
+                        <td><a ng-click="agregarTutor()" class="button">Seleccionar</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="action">
+                <li><a href="#!/scheduleTutorial" class="button">Agendar tutoria</a></li>
+            </ul>
         </div>
     </div>
 

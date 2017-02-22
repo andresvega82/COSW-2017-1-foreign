@@ -19,6 +19,15 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
         }});
     })
 
+    //tutores
+    .factory('tutores', function($resource) {
+        return $resource('/tutores',{},
+            { get: {
+                method: 'GET',
+                isArray: true
+            }});
+    })
+
 
     .factory('clientById', function($resource) {
         return $resource('/clients/:id',{id:"@_id"},{'get': { method: 'GET'}});

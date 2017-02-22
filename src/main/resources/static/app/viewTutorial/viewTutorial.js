@@ -11,15 +11,7 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
             controller: 'ViewTutorialCtrl'
         });
     }])
-<<<<<<< HEAD
-
-
-
-    .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'user', function($scope, $rootScope,$http,$resource,user) {
-
-=======
     .controller('ViewTutorialCtrl', ['$scope', '$rootScope','$http','$resource', 'tutorial', function($scope, $rootScope, $http, $resource, tutorial) {
->>>>>>> d13d785926431bea77853ad3830840938b31b028
         $scope.userId = null;
         $scope.newTutorial = false;
         $scope.tutorialId = null;
@@ -32,25 +24,34 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         $scope.tutorialListAll = []
 
 
-        $scope.getAll=function(){
-        tutorial.get()
-                    .$promise.then(
-                    //success
+        $scope.agregarTutoria = function(){
+            if ($scope.languaje!="") {
+                if ($scope.date!=null) {
+                    if ($scope.hour!=null) {
+                        if ($scope.timeHour!=null) {
+                            var newTutorial = {"languaje":$scope.languaje,"date":$rootScope.date,"hour":$scope.hour,"timeHour":$scope.timeHour,"timeMin":$scope.timeMin};
+                            console.log(newTutorial)
+                            console.log("creando nueva tutoria, datos iniciales")
+                            tutorial.save(newTutorial, function(){
+                                console.log("guardando la tutoria")
 
-                    function( value ){
-                        for(var i=0;i<value.length; i++){
-                                $scope.tutorialListAll.push(value[i]);
-                                console.info(value[i]);
+
+                            });
+                        }else{
+                            alert("Todos los campos son obligatorios, falta la Duracion de la sesion");
                         }
-                        $scope.busy=false;
-                    },
-                    //error
-                    function( error ){
-                        console.log(error)
+                    }else{
+                        alert("Todos los campos son obligatorios, falta hora inicial ");
                     }
-              );
+                }else{
+                    alert("Todos los campos son obligatorios, falta la fecha");
+                }
+            }else{
+                alert("Todos los campos son obligatorios, falta el lenguaje");
+                console.log($scope.languaje)
+            }
+        }
 
-        };
 
 
 
