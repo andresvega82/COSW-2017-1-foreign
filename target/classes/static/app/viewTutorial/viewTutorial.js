@@ -25,9 +25,6 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
 
 
         $scope.getAll=function(){
-
-     
-
         tutorial.get()
                     .$promise.then(
                     //success
@@ -44,7 +41,6 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
                         console.log(error)
                     }
               );
-
 
         };
 
