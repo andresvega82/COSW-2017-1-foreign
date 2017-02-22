@@ -10,7 +10,7 @@ angular.module('myApp.perfil', ['ngRoute'])
 }])
 
     .controller('perfilCtrl',[ 'clientById', '$scope', function(  clientById, $scope) {
-        $scope.user="UsuarioMamaya"
+        $scope.user="Usuario"
         $scope.us=clientById.get({id:""+$scope.user});
         $scope.us.$promise.then(
             //success

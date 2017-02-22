@@ -6,6 +6,7 @@ com\eci\edu\controllers\usersController.class
 com\eci\edu\CoswApplication$SecurityConfiguration.class
 com\eci\edu\entities\Tutorial.class
 com\eci\edu\controllers\RestTutorial.class
+com\eci\edu\entities\User.class
 com\eci\edu\services\InterfazClientes.class
 com\eci\edu\services\TutorialClient.class
 com\eci\edu\services\interfaceTutorial.class

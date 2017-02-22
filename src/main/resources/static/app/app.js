@@ -23,22 +23,19 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
 
 .controller('appController',['$scope','$http','$location',function($scope,$http,$location){
     $scope.logout = function () {
-                $http.post('/logout', {}).then(successCallback, errorCallback);
-
-                function successCallback(data){
-
-                    $scope.authenticated = false;
-
-                    $location.path("/viewMain");
-
-
-                };
-                function errorCallback(error){
-                    $scope.authenticated = false;
-                };
+        $http.post('/logout', {}).then(successCallback, errorCallback);
+        function successCallback(data){
+            $scope.authenticated = false;
+            if($scope.authenticated){
+                $scope.authenticated = false;
+                console.log("no hizo cambio");
+            }
+            window.location.href = "/app/index.html";
+            //$location.path("/viewMain");
+        };
+        function errorCallback(error){
+            $scope.authenticated = false;
+        };
     };
-
-
-
 }])
 ;

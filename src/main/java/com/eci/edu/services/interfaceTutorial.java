@@ -9,7 +9,7 @@ import java.util.*;
 public interface interfaceTutorial {
 
     public void updateTutorial(Tutorial t);
-    public ArrayList<Tutorial> getTutorials();
+    public List<Tutorial> getTutorials();
     public void addTutorial (Tutorial t);
-    public ArrayList<Tutorial> getTutorialByUserId(Integer id);
+    public List<Tutorial> getTutorialByUserId(Integer id);
 }
