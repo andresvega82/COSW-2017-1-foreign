@@ -1,23 +1,31 @@
 'use strict';
 
-angular.module('myApp.perfil', ['ngRoute'])
+angular.module('myApp.viewMyTutories', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/perfil', {
-    templateUrl: 'perfil/perfil.html',
-    controller: 'perfilCtrl'
+  $routeProvider.when('/viewMyTutories', {
+    templateUrl: 'viewMyTutories/viewMyTutories.html',
+    controller: 'viewMyTutoriesCtrl'
   });
 }])
 
-    .controller('perfilCtrl',[ 'clientById', '$scope', function(  clientById, $scope) {
-        $scope.user="Usuario"
-        $scope.us=clientById.get({id:""+$scope.user});
-        $scope.us.$promise.then(
-            //success
-         function( value ){
-            $scope.us=value;
-            console.info($scope.us.nombre+"      "+value);
-             alert("Ya existe un usuario con ID: "+"!!!");
-             $scope.busy=false;
-         });
+    .controller('viewMyTutoriesCtrl',['$scope', 'tutorial', function( $scope, tutorial) {
+        $scope.misTutorias = []
+
+        tutorial.get()
+            .$promise.then(
+                //success
+                function( value ){
+                    for(var i=0;i<value.length; i++){
+                        $scope.misTutorias.push(value[i]);
+                        console.info(value[i]);
+                    }
+                    $scope.busy=false;
+                },
+                //error
+                function( error ){
+                    console.log(error)
+                }
+                );
+
 }]);

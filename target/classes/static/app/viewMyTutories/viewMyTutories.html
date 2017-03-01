@@ -6,9 +6,39 @@
 </head>
 <body>
 
-<div class="image-wrapper">
-    <a class="image featured"><img src="images/teacher2.jpg" alt="" /></a>
+<article id="content">
+    <header>
+        <h1>Mis Tutorias</h1>
+    </header>
+</article>
+
+<div>
+    <table class="table table-striped table-hover">
+        <tbody>
+        <tr>
+
+            <th>Idioma</th>
+            <th>Fecha</th>
+            <th>Hora Inicio</th>
+            <th>Lugar</th>
+        </tr>
+
+
+        <tr ng-repeat="todo in misTutorias">
+            <td>{{todo.languaje}}</td>
+            <td>{{todo.date}}</td>
+            <td>{{todo.startTime}}</td>
+            <td>{{todo.duration}}</td>
+            <td>{{todo.timeMin}}</td>
+            <td>{{todo.idClient}}</td>
+            <td>{{todo.idTutor}}</td>
+            <td><a ng-click="agregarTutor()" class="button">Seleccionar</a></td>
+        </tr>
+
+        </tbody>
+    </table>
 </div>
+
 
 </body>
 </html>
