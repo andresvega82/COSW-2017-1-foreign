@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.viewMain',
   'myApp.viewRegistry',
   'myApp.searchTutor',
+  'myApp.viewMyTutories',
   'myApp.scheduleTutorial',
   'myApp.viewHistory',
   'services.fabricas',

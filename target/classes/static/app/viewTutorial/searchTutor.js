@@ -9,8 +9,7 @@ angular.module('myApp.searchTutor', ['ngRoute'])
         });
     }])
 
-    .controller('SearchTutorCtrl', ['$scope', '$rootScope','$http','$resource','tutores','' +
-    '', function($scope, $rootScope, $http, $resource, tutores, tutorial) {
+    .controller('SearchTutorCtrl', ['$scope', '$rootScope','$http','$resource','tutores','tutorial', function($scope, $rootScope, $http, $resource, tutores, tutorial) {
         $scope.name = null;
         $scope.age = null;
         $scope.description= null;
