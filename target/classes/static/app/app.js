@@ -14,7 +14,8 @@ angular.module('myApp', [
   'myApp.scheduleTutorial',
   'myApp.viewHistory',
   'services.fabricas',
-  'myApp.version'
+  'myApp.version',
+  'firebase'
 ]).
 config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
     $locationProvider.hashPrefix('!');

@@ -1,6 +1,17 @@
 'use strict';
 angular.module('services.fabricas', ['ngRoute','ngResource'])
 
+    //loginFactory
+    .factory('RegisterFactory', function($firebaseAuth){
+            return{
+                register: function(username, password){
+                    var auth = $firebaseAuth();
+                    //console.log("registro");
+                    return auth.$createUserWithEmailAndPassword(username, password);
+                }
+            }
+    })
+
     .factory('Clients', function($resource){
                 return $resource('/clients',{},{
                     get: {
