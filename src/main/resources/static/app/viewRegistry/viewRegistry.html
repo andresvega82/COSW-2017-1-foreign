@@ -55,7 +55,7 @@
             <li>Confirmar Contraseña</li>
         </ul>
         <ul class="actions">
-            <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" /></li>
+            <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" ng-keyup="$event.keyCode == 13 && registrar()"/></li>
         </ul>
         <ul class="actions">
             <button ng-click="registrar()">Registrarme</button>

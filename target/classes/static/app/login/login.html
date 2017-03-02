@@ -18,16 +18,16 @@
 
         <ul class="actions">
             <li> Email:<br /></li>
-            <li><input type="text" ng-model="credentials.username"></li>
+            <li><input type="text" ng-model="credentials.username" ng-keyup="$event.keyCode == 13 && login()"></li>
         </ul>
 
         <ul class="actions">
             <li> Contraseña:<br /></li>
-            <li><input type="password" ng-model="credentials.password"/></li>
+            <li><input type="password" ng-model="credentials.password" ng-keyup="$event.keyCode == 13 && login()"/></li>
         </ul>
 
         <ul class="actions">
-            <button type="submit" ng-click="login()">Ingresar</button>
+            <button id="loginButton" type="submit" ng-click="login()">Ingresar</button>
         </ul>
     </section>
 </div>
