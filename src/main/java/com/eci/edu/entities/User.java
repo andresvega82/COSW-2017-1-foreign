@@ -1,33 +1,64 @@
 package com.eci.edu.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+import java.sql.Blob;
+
 /**
  *
  */
-public class User {
-    private String firtsName;
+@Entity
+@Table(name = "Users")
+public class User implements Serializable {
+    private Integer user_id;
+    private String name;
     private String lastName;
     private String email;
-    private String number;
+    private String phone;
     private String country;
-    private String password;
+    private Blob photo;
+    private Integer age;
 
-    public User(String firtsName, String lastName, String email, String number, String country, String password) {
-        this.firtsName = firtsName;
+    public User(){
+
+    }
+
+    public User(Integer id,String name, String lastName, String email, String phone, String country,Integer Age) {
+        this.name = name;
         this.lastName = lastName;
         this.email = email;
-        this.number = number;
+        this.phone = phone;
         this.country = country;
-        this.password = password;
+        this.user_id = id;
+        this.age = Age;
     }
 
-    public String getFirtsName() {
-        return firtsName;
+
+
+    @Column
+    @Id
+    public Integer getUser_id() {
+        return user_id;
     }
 
-    public void setFirtsName(String firtsName) {
-        this.firtsName = firtsName;
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
+    @Column
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    @Column
     public String getLastName() {
         return lastName;
     }
@@ -36,6 +67,7 @@ public class User {
         this.lastName = lastName;
     }
 
+    @Column
     public String getEmail() {
         return email;
     }
@@ -44,14 +76,16 @@ public class User {
         this.email = email;
     }
 
-    public String getNumber() {
-        return number;
+    @Column
+    public String getPhone() {
+        return phone;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
+    @Column
     public String getCountry() {
         return country;
     }
@@ -60,11 +94,22 @@ public class User {
         this.country = country;
     }
 
-    public String getPassword() {
-        return password;
+    @Column
+    public Blob getPhoto() {
+        return photo;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPhoto(Blob photo) {
+        this.photo = photo;
+    }
+
+
+    @Column
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

@@ -44,10 +44,12 @@ public class RestClients {
 
     @RequestMapping(method = RequestMethod.POST, value = "/register")
     public ResponseEntity<?> register(@RequestBody String params) throws Exception{
+        /**
         params = params.substring(1,params.length()-1);
         String[] userParams = params.split(",");
-        User user = new User(userParams[1],userParams[2],userParams[3],userParams[4],userParams[5],userParams[6]);
+        //User user = new User(userParams[1],userParams[2],userParams[3],userParams[4],userParams[5],userParams[6]);
         if(!manejador.registerUser(user) || !userParams[7].equals(userParams[6]))return new ResponseEntity<>(HttpStatus.CONFLICT);
+         **/
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
