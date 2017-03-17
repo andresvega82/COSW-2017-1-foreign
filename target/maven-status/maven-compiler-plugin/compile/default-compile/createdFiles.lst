@@ -1,6 +1,16 @@
+com\eci\edu\entities\Tutor.class
+com\eci\edu\controllers\RestClients.class
 com\eci\edu\services\InterfaceTutores.class
+com\eci\edu\services\ManejadorClientes.class
+com\eci\edu\entities\Tutorial.class
+com\eci\edu\entities\User.class
 com\eci\edu\services\Tutores.class
 com\eci\edu\controllers\RegisterController.class
+com\eci\edu\services\InterfazClientes.class
+com\eci\edu\services\TutorialClient.class
 com\eci\edu\services\UserServices.class
+com\eci\edu\services\interfaceTutorial.class
 com\eci\edu\controllers\TutorialController.class
+com\eci\edu\entities\Client.class
 com\eci\edu\controllers\TutorController.class
+com\eci\edu\CoswApplication.class
