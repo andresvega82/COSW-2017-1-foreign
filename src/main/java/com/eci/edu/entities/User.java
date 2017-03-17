@@ -13,7 +13,7 @@ import java.sql.Blob;
 @Entity
 @Table(name = "Users")
 public class User implements Serializable {
-    private Integer user_id;
+    private String user_id;
     private String name;
     private String lastName;
     private String email;
@@ -26,7 +26,7 @@ public class User implements Serializable {
 
     }
 
-    public User(Integer id,String name, String lastName, String email, String phone, String country,Integer Age) {
+    public User(String id, String name, String lastName, String email, String phone, String country, Integer Age) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
@@ -40,11 +40,11 @@ public class User implements Serializable {
 
     @Column
     @Id
-    public Integer getUser_id() {
+    public String getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(Integer user_id) {
+    public void setUser_id(String user_id) {
         this.user_id = user_id;
     }
 
@@ -111,5 +111,10 @@ public class User implements Serializable {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString(){
+        return user_id+" "+name+" "+lastName+" "+age+" "+email+" "+country+" "+phone;
     }
 }

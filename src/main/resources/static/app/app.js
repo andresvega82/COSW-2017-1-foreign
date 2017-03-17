@@ -30,10 +30,8 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
             $scope.authenticated = false;
             if($scope.authenticated){
                 $scope.authenticated = false;
-                console.log("no hizo cambio");
             }
             window.location.href = "/app/index.html";
-            //$location.path("/viewMain");
         };
         function errorCallback(error){
             $scope.authenticated = false;

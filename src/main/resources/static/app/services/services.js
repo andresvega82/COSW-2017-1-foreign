@@ -8,6 +8,10 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
                     var auth = $firebaseAuth();
                     //console.log("registro");
                     return auth.$createUserWithEmailAndPassword(username, password);
+                },
+                signIn : function(username, password){
+                    var auth = $firebaseAuth();
+                    return auth.$signInWithEmailAndPassword(username, password);
                 }
             }
     })
@@ -39,6 +43,12 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
             }});
     })
 
+    .factory('registerPost', function($resource){
+        return $resource('./addUser', {name:'@name',lastName:'@lastbame',country:'@country'},{
+            addTodo:{
+            method:'POST'}
+            });
+    })
 
     .factory('clientById', function($resource) {
         return $resource('/clients/:id',{id:"@_id"},{'get': { method: 'GET'}});

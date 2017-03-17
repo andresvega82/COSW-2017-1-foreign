@@ -1,4 +1,6 @@
 com\eci\edu\services\InterfaceTutores.class
 com\eci\edu\services\Tutores.class
+com\eci\edu\controllers\RegisterController.class
+com\eci\edu\services\UserServices.class
 com\eci\edu\controllers\TutorialController.class
 com\eci\edu\controllers\TutorController.class

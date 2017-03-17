@@ -17,44 +17,34 @@
         </header>
         <ul class="actions">
             <li> Nombre</li>
-        </ul>
-        <ul class="actions">
             <li><input type="text" name="name" id="name" ng-model="datos.name" /></li>
         </ul>
         <ul class="actions">
             <li> Apellidos</li>
-        </ul>
-        <ul class="actions">
             <li><input type="text" name="apellido" id="apellido" ng-model="datos.lastname"  /></li>
         </ul>
         <ul class="actions">
-            <li>Email</li>
+            <li> Edad</li>
+            <li><input type="number" name="age" id="age" ng-model="datos.age" /></li>
         </ul>
         <ul class="actions">
+            <li>Email</li>
             <li><input type="text" name="email" id="email" ng-model="datos.email"  /></li>
         </ul>
         <ul class="actions">
             <li>Numero de Telefono</li>
-        </ul>
-        <ul class="actions">
-            <li><input type="number" name="celular" id="celular"  ng-model="datos.number"   /></li>
+            <li><input type="text" name="celular" id="celular"  ng-model="datos.phone"   /></li>
         </ul>
         <ul class="actions">
             <li>País</li>
-        </ul>
-        <ul class="actions">
             <li><input type="text" name="pais" id="pais" ng-model="datos.country"  /></li>
         </ul>
         <ul class="actions">
             <li>Contraseña</li>
-        </ul>
-        <ul class="actions">
             <li><input type="password" name="contraseña" id="contraseña" ng-model="datos.password"  /></li>
         </ul>
         <ul class="actions">
             <li>Confirmar Contraseña</li>
-        </ul>
-        <ul class="actions">
             <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" ng-keyup="$event.keyCode == 13 && registrar()"/></li>
         </ul>
         <ul class="actions">

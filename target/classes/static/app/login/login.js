@@ -8,41 +8,17 @@ angular.module('myApp.login', ['ngRoute'])
     controller: 'loginCtrl'
   });
 }])
-.controller('loginCtrl', ['$rootScope', '$scope', '$http', '$location', function ($scope,$rootScope, $http, $location ) {
-    var authenticate = function (credentials, callback) {
-
-        var headers = credentials ? {authorization: "Basic "
-                    + btoa(credentials.username + ":" + credentials.password)
-        } : {};
-
-        $http.get('user', {headers: headers}).then(successCallback, errorCallback);
-
-        function successCallback(data){
-            if (data.data.name) {
-                $scope.authenticated = true;
-            }else {
-                $scope.authenticated = false;
-            }
-                callback && callback();
-        }
-
-        function errorCallback(error){
-            $scope.authenticated = false;
-             callback && callback();
-        }
-    };
-    authenticate();
+.controller('loginCtrl', ['$rootScope', '$scope', '$http', '$location','RegisterFactory', function ($scope,$rootScope, $http, $location, RegisterFactory ) {
     $scope.credentials = {};
     $scope.login = function () {
-        authenticate($scope.credentials, function () {
-
-            if ($scope.authenticated) {
-                $location.path("/viewTutorial");
-                $scope.error = false;
-            } else {
-                $location.path("/login");
-                $scope.error = true;
-            }
+        RegisterFactory.signIn($scope.credentials.username, $scope.credentials.password).then(function (data){
+            //console.log("Entro");
+            $scope.error = false;
+            $scope.authenticated = true;
+            $location.path("/viewTutorial");
+        }).catch(function(err){
+            $scope.authenticated = false;
+            $location.path("/login");
         });
 };
 }]);

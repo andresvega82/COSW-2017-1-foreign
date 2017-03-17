@@ -9,12 +9,12 @@ angular.module('myApp.viewRegistry', ['ngRoute'])
         });
     }])
 
-    .controller('viewRegistryCtrl', ['$scope', '$location', 'RegisterFactory',function($scope,$location,RegisterFactory) {
+    .controller('viewRegistryCtrl', ['$scope', '$location','$http', 'RegisterFactory','registerPost',function($scope,$location,$http,RegisterFactory,registerPost) {
         $scope.datos = {};
         $scope.registrar = function (){
             RegisterFactory.register($scope.datos.email, $scope.datos.password).then(function(data){
-                 //$state.go('parkings');
-                  $location.path("/login");
+                registerPost.addTodo({user_id:data.uid, name:$scope.datos.name, lastName:$scope.datos.lastname, email:$scope.datos.email, phone:$scope.datos.phone, country:$scope.datos.country, age:$scope.datos.age});
+                $location.path("/login");
             });
 
         }

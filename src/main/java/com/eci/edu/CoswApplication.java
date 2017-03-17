@@ -17,13 +17,16 @@ import org.hibernate.cfg.Configuration;
 public class CoswApplication {
 
 	public static void main(String[] args) {
-
-
 		SpringApplication.run(CoswApplication.class, args);
-
-
-
-
+		/**
+		SessionFactory sf=getSessionFactory();
+		Session s=sf.openSession();
+		Transaction tx=s.beginTransaction();
+		s.saveOrUpdate(new User("aaa123","name","lastname","correo","1234456","Pais",23));
+		tx.commit();
+		s.close();
+		sf.close();
+		 **/
 
 	}
 
