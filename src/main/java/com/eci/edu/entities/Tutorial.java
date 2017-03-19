@@ -13,7 +13,7 @@ public class Tutorial {
     private Date date;
     private String state;
     private int duration;
-    private int idTutor;
+    private TutorialId idTutor;
     private int tutorialId;
     private int payment;
     private int cost;
@@ -23,7 +23,7 @@ public class Tutorial {
 
     }
 
-    public Tutorial(int tutorialId, int languajeId, String state, Date date, int duration, int idTutor, int payment, int cost){
+    public Tutorial(int tutorialId, int languajeId, String state, Date date, int duration, TutorialId idTutor, int payment, int cost){
         this.tutorialId = tutorialId;
         this.idTutor = idTutor;
         this.date = date;
@@ -103,16 +103,10 @@ public class Tutorial {
         this.cost = cost;
     }
 
-
-    @Column(name = "Teachers_teacher_id")
-    public int getIdTutor() {
+    @EmbeddedId
+    public TutorialId getIdTutor() {
         return idTutor;
     }
-
-    public void setIdTutor(int idTutor) {
-        this.idTutor = idTutor;
-    }
-
 
 
 }
