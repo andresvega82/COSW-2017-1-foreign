@@ -40,6 +40,4 @@ public class TutorialId implements java.io.Serializable{
         this.TeachersId = TeachersId;
     }
 
-
-
 }
