@@ -6,6 +6,7 @@ import java.util.*;
 /**
  * Created by foreign on 17/02/17.
  */
+
 @Entity
 @Table(name = "Tutorials")
 public class Tutorial {
