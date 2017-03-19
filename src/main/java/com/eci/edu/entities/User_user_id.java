@@ -1,7 +1,7 @@
 package com.eci.edu.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
 import java.io.Serializable;
 
 /**
@@ -22,6 +22,7 @@ public class User_user_id implements Serializable {
         this.users_user_id=users_user_id;
     }
 
+    @Column(name="student_id")
     public Integer getStudent_id() {
         return student_id;
     }
@@ -30,6 +31,7 @@ public class User_user_id implements Serializable {
         this.student_id = student_id;
     }
 
+    @Column(name="User_user_id")
     public String getUsers_user_id() {
         return users_user_id;
     }

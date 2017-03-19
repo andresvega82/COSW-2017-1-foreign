@@ -15,7 +15,7 @@ import static com.eci.edu.CoswApplication.getSessionFactory;
  * Created by nicolasguzmanp on 19/03/17.
  */
 @Service
-public class ManejadorStudentsORM implements InterfazClientes {
+public class StudentsServiceImpl implements InterfazClientes {
 
     @Override
     public void registrarCliente(Student cliente) {
