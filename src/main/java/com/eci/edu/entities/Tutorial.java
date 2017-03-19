@@ -1,40 +1,61 @@
 package com.eci.edu.entities;
 
 
-import java.util.Date;
+import javax.persistence.*;
+import java.util.*;
 /**
- * Created by tata on 17/02/17.
+ * Created by foreign on 17/02/17.
  */
+@Entity
+@Table(name = "Tutorials")
 public class Tutorial {
-    private String languaje;
+    private int languajeId;
     private Date date;
-    private Date startTime;
+    private String state;
     private int duration;
-    private int idClient;
     private int idTutor;
+    private int tutorialId;
+    private int payment;
+    private int cost;
 
 
     public Tutorial(){
 
     }
 
-    public Tutorial(String languaje, Date date, Date startTime, int duration, int idClient, int idTutor){
-        this.languaje = languaje;
-        this.date = date;
-        this.startTime = startTime;
-        this.duration = duration;
-        this.idClient = idClient;
+    public Tutorial(int tutorialId, int languajeId, String state, Date date, int duration, int idTutor, int payment, int cost){
+        this.tutorialId = tutorialId;
         this.idTutor = idTutor;
+        this.date = date;
+        this.duration = duration;
+        this.languajeId = languajeId;
+        this.state = state;
+        this.payment = payment;
+        this.cost = cost;
     }
 
-    public String getLanguaje() {
-        return languaje;
+    @Id
+    @Column(name = "tutorial_id")
+    public int getTutorial_id() {
+        return tutorialId;
     }
 
-    public void setLanguaje(String languaje) {
-        this.languaje = languaje;
+    public void setTutorial(int tutorial_id) {
+        this.tutorialId = tutorial_id;
     }
 
+
+    @Column(name = "languaje_id")
+    public int getLanguajeId() {
+        return languajeId;
+    }
+
+    public void setLanguaje(int lenguajeId) {
+        this.languajeId = lenguajeId;
+    }
+
+
+    @Column(name = "date")
     public Date getDate() {
         return date;
     }
@@ -43,14 +64,8 @@ public class Tutorial {
         this.date = date;
     }
 
-    public Date getStartTime() {
-        return startTime;
-    }
 
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
-
+    @Column(name = "duration")
     public int getDuration() {
         return duration;
     }
@@ -59,14 +74,37 @@ public class Tutorial {
         this.duration = duration;
     }
 
-    public int getIdClient() {
-        return idClient;
+
+    @Column(name = "state")
+    public String getState() {
+        return state;
     }
 
-    public void setIdClient(int idClient) {
-        this.idClient = idClient;
+    public void setState(String state) {
+        this.state= state;
     }
 
+
+    @Column(name = "payment")
+    public int getPayment() {
+        return payment;
+    }
+
+    public void setPayment(int payment) {
+        this.payment = payment;
+    }
+
+    @Column(name = "cost")
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+
+    @Column(name = "Teachers_teacher_id")
     public int getIdTutor() {
         return idTutor;
     }
