@@ -26,7 +26,7 @@ public class User implements Serializable {
 
     }
 
-    public User(String  id, String name, String lastName, String email, String phone, String country, Integer Age) {
+    public User(String id, String name, String lastName, String email, String phone, String country, Integer Age) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
@@ -37,8 +37,9 @@ public class User implements Serializable {
     }
 
 
+
+    @Column
     @Id
-    @Column (name = "user_id")
     public String getUser_id() {
         return user_id;
     }
@@ -47,7 +48,7 @@ public class User implements Serializable {
         this.user_id = user_id;
     }
 
-    @Column (name = "name")
+    @Column
     public String getName() {
         return name;
     }
@@ -57,7 +58,7 @@ public class User implements Serializable {
     }
 
 
-    @Column (name = "lastName")
+    @Column
     public String getLastName() {
         return lastName;
     }
@@ -66,7 +67,7 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 
-    @Column (name = "email")
+    @Column
     public String getEmail() {
         return email;
     }
@@ -75,7 +76,7 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    @Column (name = "phone")
+    @Column
     public String getPhone() {
         return phone;
     }
@@ -84,7 +85,7 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
-    @Column (name = "country")
+    @Column
     public String getCountry() {
         return country;
     }
@@ -93,7 +94,7 @@ public class User implements Serializable {
         this.country = country;
     }
 
-    @Column (name = "photo")
+    @Column
     public Blob getPhoto() {
         return photo;
     }
@@ -103,7 +104,7 @@ public class User implements Serializable {
     }
 
 
-    @Column (name = "age")
+    @Column
     public Integer getAge() {
         return age;
     }
