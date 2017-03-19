@@ -22,7 +22,7 @@ public class TutorialClient implements interfaceTutorial{
     @Override
     public List<Tutorial> getTutorials(){
         Date date = new Date();
-        Tutorial t = new Tutorial("English", date, date, 20, 1, 1);
+        Tutorial t = new Tutorial();
         tutorials.add(t);
         System.out.println("Entro hasta tutoria del cliente"+ tutorials.size());
         return tutorials;

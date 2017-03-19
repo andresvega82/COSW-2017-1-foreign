@@ -1,9 +1,6 @@
 package com.eci.edu.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -22,6 +19,10 @@ public class Student implements Serializable {
         this.description=d;
     }
 
+    public Student(){
+
+    }
+
     @Id
     @Column(name ="student_id")
     public Integer getStudent_id() {
@@ -32,7 +33,7 @@ public class Student implements Serializable {
         this.student_id = student_id;
     }
 
-    @Column(name ="users_user_id")
+    @EmbeddedId
     public String getUsers_user_id() {
         return users_user_id;
     }
