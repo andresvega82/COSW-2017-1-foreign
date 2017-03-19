@@ -26,7 +26,7 @@ public class TutorialServicesImpl implements interfaceTutorial{
     }
 
     @Override
-    public List<Tutorial> getTutorialByUserId(Integer id) {
+    public List<Tutorial> getTutorialByUserId(int id) {
         return null;
     }
 }

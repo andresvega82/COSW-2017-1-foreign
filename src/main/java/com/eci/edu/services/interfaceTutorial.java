@@ -11,5 +11,5 @@ public interface interfaceTutorial {
     public void updateTutorial(Tutorial t);
     public List<Tutorial> getTutorials();
     public void addTutorial (Tutorial t);
-    public List<Tutorial> getTutorialByUserId(Integer id);
+    public List<Tutorial> getTutorialByUserId(int id);
 }

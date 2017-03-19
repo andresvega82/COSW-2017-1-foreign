@@ -34,8 +34,9 @@ public class TutorialClient implements interfaceTutorial{
     public void addTutorial (Tutorial t){
         tutorials.add(t);
     }
+
     @Override
-    public List<Tutorial> getTutorialByUserId(Integer id){
+    public List<Tutorial> getTutorialByUserId(int id){
         return null;
     }
 }
