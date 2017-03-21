@@ -1,6 +1,6 @@
 package com.eci.edu.services;
 
-import com.eci.edu.entities.Tutor;
+import com.eci.edu.entities.Teacher;
 
 import java.util.*;
 /**
@@ -8,8 +8,8 @@ import java.util.*;
  */
 public interface InterfaceTutores {
 
-    public void updateTutor(Tutor t);
-    public List<Tutor> getTutores();
-    public void addTutor (Tutor t);
+    public void updateTutor(Teacher t);
+    public List<Teacher> getTutores();
+    public void addTutor (Teacher t);
 
 }

@@ -1,40 +1,38 @@
 package com.eci.edu.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Blob;
 
 /**
  * Created by tata on 19/03/17.
  */
-public class Teacher {
-    private int teacherId;
-    private String description;
-    private TeacherId userId;
+
+@Entity
+@Table(name="Teachers")
+public class Teacher implements Serializable {
+    private String description = null;
+    private TeacherId users_user_id;
     private Blob validateDocument;
 
     public Teacher(){
 
     }
 
-    public Teacher(int teacherId, String description, TeacherId userId, Blob validateDocument){
-        this.teacherId = teacherId;
+    public Teacher( TeacherId users_user_id, String description,  Blob validateDocument){
         this.description = description;
-        this.userId = userId;
+        this.users_user_id = users_user_id;
         this.validateDocument = validateDocument;
 
     }
 
-    @Id
-    @Column (name = "teacher_id")
-    public int getTeacherId() {
-        return teacherId;
+    @EmbeddedId
+    public TeacherId getUsers_user_id() {
+        return users_user_id;
     }
 
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
+    public void setUsers_user_id(TeacherId users_user_id) {
+        this.users_user_id = users_user_id;
     }
 
     @Column (name = "Description")
@@ -46,10 +44,6 @@ public class Teacher {
         this.description = description;
     }
 
-    @EmbeddedId
-    public TeacherId getUserId() {
-        return userId;
-    }
 
     @Column (name = "ValidateDocument")
     public Blob getValidateDocument() {

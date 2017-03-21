@@ -2,7 +2,6 @@ package com.eci.edu.services;
 
 import com.eci.edu.entities.Student;
 import com.eci.edu.entities.User;
-import com.eci.edu.services.InterfazClientes;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,32 +10,25 @@ import java.util.Hashtable;
 /**
  * Created by 2098165 on 2/16/17.
  */
-public class ManejadorStudents implements InterfazClientes {
+@Service
+public class ManejadorClientes implements InterfazClientes {
     public Hashtable<String, User> stubMemory = new Hashtable<>();
     public ArrayList<Student> clientes = new ArrayList<>();
 
-    public void registrarCliente(Student cliente){
+    public void registrarCliente(Student student){
 
-        clientes.add(cliente);
+        clientes.add(student);
     }
     @Override
     public ArrayList<Student> getClientes(){
-
-        Student fili= new Student(1,"jehova", "correo");
-        clientes.add(fili);
         return clientes;
     }
     @Override
     public Student getClientePorId(Integer id){
         Student c=null;
 
-        Student fili= new Student(2, "Juan","jehova");
+        Student fili= null;//new Student(2, "Juan","jehova", "correo", 654, "juana", "brasil", "bogota","español" );
         clientes.add(fili);
-        for (int i=0; i<clientes.size(); i++){
-            if(clientes.get(i).getUsers_user_id().equals(id)){
-                c=clientes.get(i);
-            }
-        }
         return c;
     }
 

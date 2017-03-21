@@ -1,7 +1,6 @@
 package com.eci.edu.services;
 
 import com.eci.edu.entities.Student;
-import com.eci.edu.entities.Student;
 import com.eci.edu.entities.User;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import java.util.ArrayList;
  */
 public interface InterfazClientes {
 
-    void registrarCliente(Student cliente);
+    void registrarCliente(Student student);
     ArrayList<Student> getClientes();
     Student getClientePorId(Integer id);
     boolean registerUser (User user);

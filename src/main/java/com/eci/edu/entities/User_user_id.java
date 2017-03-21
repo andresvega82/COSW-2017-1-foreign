@@ -31,7 +31,7 @@ public class User_user_id implements Serializable {
         this.student_id = student_id;
     }
 
-    @Column(name="User_user_id")
+    @Column(name="Users_user_id")
     public String getUsers_user_id() {
         return users_user_id;
     }

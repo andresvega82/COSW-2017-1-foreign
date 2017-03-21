@@ -6,32 +6,14 @@ import java.util.*;
 /**
  * Created by foreign on 17/02/17.
  */
-
 @Entity
 @Table(name = "Tutorials")
-public class Tutorial {
-    public void setLanguajeId(int languajeId) {
-        this.languajeId = languajeId;
-    }
+public class Tutorial implements java.io.Serializable{
 
-    public void setIdTutor(TutorialId idTutor) {
-        this.idTutor = idTutor;
-    }
-
-    public int getTutorialId() {
-        return tutorialId;
-    }
-
-    public void setTutorialId(int tutorialId) {
-        this.tutorialId = tutorialId;
-    }
-
-    private int languajeId;
     private Date date;
     private String state;
     private int duration;
     private TutorialId idTutor;
-    private int tutorialId;
     private int payment;
     private int cost;
 
@@ -40,36 +22,15 @@ public class Tutorial {
 
     }
 
-    public Tutorial(int tutorialId, int languajeId, String state, Date date, int duration, TutorialId idTutor, int payment, int cost){
-        this.tutorialId = tutorialId;
+    public Tutorial( String state, Date date, int duration, TutorialId idTutor, int payment, int cost){
         this.idTutor = idTutor;
         this.date = date;
         this.duration = duration;
-        this.languajeId = languajeId;
+
         this.state = state;
         this.payment = payment;
         this.cost = cost;
     }
-
-    @Column(name = "tutoria_id")
-    public int getTutorial_id() {
-        return tutorialId;
-    }
-
-    public void setTutorial(int tutorial_id) {
-        this.tutorialId = tutorial_id;
-    }
-
-
-    @Column(name = "languaje_id")
-    public int getLanguajeId() {
-        return languajeId;
-    }
-
-    public void setLanguaje(int lenguajeId) {
-        this.languajeId = lenguajeId;
-    }
-
 
     @Column(name = "date")
     public Date getDate() {
@@ -124,5 +85,7 @@ public class Tutorial {
         return idTutor;
     }
 
-
+    public void setIdTutor(TutorialId idTutor) {
+        this.idTutor = idTutor;
+    }
 }

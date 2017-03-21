@@ -21,9 +21,6 @@ public class TutorialClient implements interfaceTutorial{
     }
     @Override
     public List<Tutorial> getTutorials(){
-        Date date = new Date();
-        Tutorial t = new Tutorial();
-        tutorials.add(t);
         /*Date date = new Date();
         Tutorial t = new Tutorial(1, , date, tutorialId, int languajeId, String state, Date date, int duration, TutorialId idTutor, int payment, int cost){);
         tutorials.add(t);*/
@@ -34,9 +31,8 @@ public class TutorialClient implements interfaceTutorial{
     public void addTutorial (Tutorial t){
         tutorials.add(t);
     }
-
     @Override
-    public List<Tutorial> getTutorialByUserId(int id){
+    public List<Tutorial> getTutorialByUserId(Integer id){
         return null;
     }
 }

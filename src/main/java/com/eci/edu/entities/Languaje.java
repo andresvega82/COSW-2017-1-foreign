@@ -1,11 +1,16 @@
 package com.eci.edu.entities;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Created by tata on 19/03/17.
  */
+
+@Entity
+@Table(name="Languajes")
 public class Languaje {
     private int lenguajeId;
     private String desciption;

@@ -13,7 +13,16 @@
         <property name="use_sql_comments">true</property>
 
         <mapping class="com.eci.edu.entities.User"/>
+        <mapping class="com.eci.edu.entities.CreditCard"/>
+        <mapping class="com.eci.edu.entities.Languaje"/>
+        <mapping class="com.eci.edu.entities.User_user_id"/>
+        <mapping class="com.eci.edu.entities.Student"/>
+
+        <mapping class="com.eci.edu.entities.TeacherId"/>
+        <mapping class="com.eci.edu.entities.Teacher"/>
+        <mapping class="com.eci.edu.entities.TutorialId"/>
         <mapping class="com.eci.edu.entities.Tutorial"/>
+
     </session-factory>
 
 </hibernate-configuration>

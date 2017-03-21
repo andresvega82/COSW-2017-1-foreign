@@ -1,6 +1,6 @@
 package com.eci.edu.services;
 
-import com.eci.edu.entities.Tutor;
+import com.eci.edu.entities.Teacher;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -12,30 +12,30 @@ import java.util.*;
 
 @Service
 public class Tutores implements InterfaceTutores {
-    private List<Tutor> tutores = new ArrayList<Tutor>();
+    private List<Teacher> tutores = new ArrayList<Teacher>();
 
     private Tutores(){
 
     }
 
     @Override
-    public void updateTutor(Tutor t){
+    public void updateTutor(Teacher t){
 
     }
 
     @Override
-    public List<Tutor> getTutores(){
-        Tutor t1 = new Tutor("Seth Rowan", 22, "Want to learn fast & have fun? I teach English/ French using music/film/ poetry/jornalism! Contact me to speed up your learning!.", "english");
-        Tutor t2 = new Tutor("Stephanie Hourly", 26, "Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna lorem ipsum.", "english");
-        Tutor t3 = new Tutor("John Stephen Thomas", 21, "Want to learn fast & have fun? I teach English/ French using music/film/ poetry/jornalism! Contact me to speed up your learning!.", "english");
-        tutores.add(t1);
-        tutores.add(t2);
-        tutores.add(t3);
+    public List<Teacher> getTutores(){
+        //Teacher t1 = new Teacher("Seth Rowan", 22, "Want to learn fast & have fun? I teach English/ French using music/film/ poetry/jornalism! Contact me to speed up your learning!.", "english");
+        //Teacher t2 = new Teacher("Stephanie Hourly", 26, "Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna lorem ipsum.", "english");
+        //Teacher t3 = new Teacher("John Stephen Thomas", 21, "Want to learn fast & have fun? I teach English/ French using music/film/ poetry/jornalism! Contact me to speed up your learning!.", "english");
+        //tutores.add(t1);
+        //tutores.add(t2);
+        //tutores.add(t3);
         return tutores;
     }
 
     @Override
-    public void addTutor (Tutor t){
+    public void addTutor (Teacher t){
         tutores.add(t);
     }
 
