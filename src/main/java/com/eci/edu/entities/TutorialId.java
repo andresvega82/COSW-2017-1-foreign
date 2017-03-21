@@ -2,6 +2,7 @@ package com.eci.edu.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Id;
 
 /**
  * Created by tata on 19/03/17.
@@ -9,35 +10,33 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class TutorialId implements java.io.Serializable{
 
-    private int id;
-    private int TeachersId;
+    private Integer tutorialId;
+    private int teachersId;
 
     public TutorialId(){
 
     }
     public TutorialId(int id,int teachersId){
-        this.id = id;
-        this.TeachersId = teachersId;
+        this.tutorialId = id;
+        this.teachersId = teachersId;
     }
-
 
     @Column(name = "tutorial_id", nullable = false,unique = true)
     public int getId() {
-        return id;
+        return tutorialId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.tutorialId = id;
     }
-
 
     @Column(name = "Teachers_teacher_id", nullable = false,unique = true)
     public int getTeachersId () {
-        return TeachersId;
+        return teachersId;
     }
 
     public void setTeachersId(int TeachersId) {
-        this.TeachersId = TeachersId;
+        this.teachersId = TeachersId;
     }
 
 }

@@ -10,6 +10,22 @@ import java.util.*;
 @Entity
 @Table(name = "Tutorials")
 public class Tutorial {
+    public void setLanguajeId(int languajeId) {
+        this.languajeId = languajeId;
+    }
+
+    public void setIdTutor(TutorialId idTutor) {
+        this.idTutor = idTutor;
+    }
+
+    public int getTutorialId() {
+        return tutorialId;
+    }
+
+    public void setTutorialId(int tutorialId) {
+        this.tutorialId = tutorialId;
+    }
+
     private int languajeId;
     private Date date;
     private String state;
@@ -35,8 +51,7 @@ public class Tutorial {
         this.cost = cost;
     }
 
-    @Id
-    @Column(name = "tutorial_id")
+    @Column(name = "tutoria_id")
     public int getTutorial_id() {
         return tutorialId;
     }

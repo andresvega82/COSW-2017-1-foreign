@@ -13,7 +13,7 @@
         <property name="use_sql_comments">true</property>
 
         <mapping class="com.eci.edu.entities.User"/>
-
+        <mapping class="com.eci.edu.entities.Tutorial"/>
     </session-factory>
 
 </hibernate-configuration>
