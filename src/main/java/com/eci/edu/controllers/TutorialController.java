@@ -1,16 +1,10 @@
 package com.eci.edu.controllers;
 import com.eci.edu.entities.Tutorial;
-import com.eci.edu.services.TutorialClient;
-import com.eci.edu.services.interfaceTutorial;
+import com.eci.edu.services.InterfaceTutorials;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
-import java.io.InputStream;
-import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created on 17/02/17.
@@ -21,7 +15,7 @@ import java.util.logging.Logger;
 public class TutorialController {
 
     @Autowired
-    private interfaceTutorial services;
+    private InterfaceTutorials services;
 
 
     @RequestMapping(method = RequestMethod.GET, value = "/tutorials")

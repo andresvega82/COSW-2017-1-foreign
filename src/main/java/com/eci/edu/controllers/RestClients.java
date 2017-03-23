@@ -1,8 +1,7 @@
 package com.eci.edu.controllers;
 
 import com.eci.edu.entities.Student;
-import com.eci.edu.entities.User;
-import com.eci.edu.services.InterfazClientes;
+import com.eci.edu.services.InterfaceStudents;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 @RequestMapping(value ="/clients")
 public class RestClients {
     @Autowired
-    private InterfazClientes manejador;
+    private InterfaceStudents manejador;
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addClient(@RequestBody Student cliente) throws Exception{

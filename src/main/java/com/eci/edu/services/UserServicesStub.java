@@ -13,7 +13,7 @@ import org.hibernate.service.ServiceRegistry;
  * Created by Nicolas M on 17/03/2017.
  */
 @Service
-public class UserServices {
+public class UserServicesStub {
 
     public void saveUser(User user){
         user.setPhoto(null);

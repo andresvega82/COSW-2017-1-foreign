@@ -1,7 +1,7 @@
 package com.eci.edu.controllers;
 
 
-import com.eci.edu.services.InterfaceTutores;
+import com.eci.edu.services.InterfaceTeachers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TutorController {
 
     @Autowired
-    private InterfaceTutores service;
+    private InterfaceTeachers service;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> getTutores(){

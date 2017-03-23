@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created by tata on 21/02/17.
  */
-public interface InterfaceTutores {
+public interface InterfaceTeachers {
 
     public void updateTutor(Teacher t);
     public List<Teacher> getTutores();

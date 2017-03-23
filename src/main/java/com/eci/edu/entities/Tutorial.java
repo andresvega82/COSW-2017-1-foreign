@@ -32,6 +32,7 @@ public class Tutorial implements java.io.Serializable{
         this.cost = cost;
     }
 
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "date")
     public Date getDate() {
         return date;

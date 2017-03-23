@@ -1,6 +1,5 @@
 package com.eci.edu.services;
 
-import java.io.*;
 import java.util.*;
 import com.eci.edu.entities.Tutorial;
 import org.springframework.stereotype.Service;
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class TutorialClient implements interfaceTutorial{
+public class TutorialServicesStub implements InterfaceTutorials {
 
 
     private List<Tutorial> tutorials = new ArrayList<Tutorial>();

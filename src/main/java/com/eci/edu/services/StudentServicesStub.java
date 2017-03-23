@@ -11,7 +11,7 @@ import java.util.Hashtable;
  * Created by 2098165 on 2/16/17.
  */
 @Service
-public class ManejadorClientes implements InterfazClientes {
+public class StudentServicesStub implements InterfaceStudents {
     public Hashtable<String, User> stubMemory = new Hashtable<>();
     public ArrayList<Student> clientes = new ArrayList<>();
 

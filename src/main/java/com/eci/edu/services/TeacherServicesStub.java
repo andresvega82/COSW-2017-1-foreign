@@ -11,10 +11,10 @@ import java.util.*;
 
 
 @Service
-public class Tutores implements InterfaceTutores {
+public class TeacherServicesStub implements InterfaceTeachers {
     private List<Teacher> tutores = new ArrayList<Teacher>();
 
-    private Tutores(){
+    private TeacherServicesStub(){
 
     }
 

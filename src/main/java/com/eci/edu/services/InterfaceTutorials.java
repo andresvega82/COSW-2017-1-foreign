@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created on 17/02/17.
  */
-public interface interfaceTutorial {
+public interface InterfaceTutorials {
 
     public void updateTutorial(Tutorial t);
     public List<Tutorial> getTutorials();
