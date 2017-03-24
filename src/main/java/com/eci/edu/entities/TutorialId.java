@@ -11,15 +11,15 @@ public class TutorialId implements java.io.Serializable{
 
     private int id;
     private int TeachersId;
-    private int studentId;
+    private int LenguajeId;
 
     public TutorialId(){
 
     }
-    public TutorialId(int id,int teachersId, int studentId){
+    public TutorialId(int id,int teachersId,int lenguajeId){
         this.id = id;
         this.TeachersId = teachersId;
-        this.studentId = studentId;
+        this.LenguajeId = lenguajeId;
     }
 
 
@@ -42,8 +42,12 @@ public class TutorialId implements java.io.Serializable{
         this.TeachersId = TeachersId;
     }
 
-    @Column(name = "Tutorials_tutorial_id", nullable = false,unique = true)
-    public int getStudentId() {return studentId;}
+    @Column(name = "languaje_id", nullable = false,unique = true)
+    public int getLenguajeId() {
+        return LenguajeId;
+    }
 
-    public void setStudentId(int studentId) {this.studentId = studentId;}
+    public void setLenguajeId(int lenguajeId) {
+        LenguajeId = lenguajeId;
+    }
 }

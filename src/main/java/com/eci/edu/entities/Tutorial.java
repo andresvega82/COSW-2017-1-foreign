@@ -103,7 +103,7 @@ public class Tutorial implements java.io.Serializable{
     }
 
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToMany(cascade=CascadeType.ALL, mappedBy = "tutorials" )
     public Set<Student> getStudents() {
         return this.students;
     }

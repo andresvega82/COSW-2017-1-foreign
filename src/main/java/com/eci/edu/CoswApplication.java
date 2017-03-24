@@ -12,6 +12,8 @@ import org.hibernate.cfg.Configuration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import java.util.Date;
+
 
 @SpringBootApplication
 @EnableJpaRepositories("eci.edu.repository")
@@ -24,13 +26,17 @@ public class CoswApplication {
 		SessionFactory sf=getSessionFactory();
 		Session s=sf.openSession();
 		Transaction tx=s.beginTransaction();
-		//s.saveOrUpdate(new User("aaa123","name","lastname","correo","1234456","Pais",23));
-		//s.saveOrUpdate(new Student(new StudentId(1,"aaa123"),"torres"));
+		/**
 
-		//s.saveOrUpdate(new User("Sebas_Porras","name","lastname","correo","1234456","Pais",23));
-		//s.saveOrUpdate(new Teacher(new TeacherId(1, "Sebas_Porras"), "sebis", null));
+		s.saveOrUpdate(new CreditCard(10,13131,new Date(),9090,10));
+		s.saveOrUpdate(new User("gasds67","vega","vega","hotmail","34343","CTO",23,10));
+		s.saveOrUpdate(new Student(new StudentId(1,"gasds67"),"torres"));
 
-		//s.saveOrUpdate(new Tutorial("cancelada", new Date(),50, new TutorialId(1, 1, 1), 2000, 2000));
+		s.saveOrUpdate(new User("Sebas_Porras","name","lastname","correo","1234456","Pais",23,10));
+		s.saveOrUpdate(new Teacher(new TeacherId(1, "Sebas_Porras"), "sebis", null));
+		s.saveOrUpdate(new Languaje(1,"Español"));
+		s.saveOrUpdate(new Tutorial("cancelada", new Date(),50, new TutorialId(1, 1,1), 2000, 2000));
+		**/
 
 		tx.commit();
 		s.close();

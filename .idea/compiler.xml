@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="COSW-2017-1-foreign" />
+        <module name="COSW" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="COSW-2017-1-foreign" target="1.8" />
+      <module name="COSW" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

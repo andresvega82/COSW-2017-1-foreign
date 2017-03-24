@@ -30,15 +30,15 @@ public class Student  implements Serializable{
 
     }
 
-
     @EmbeddedId
-    public StudentId getStudentId() {
+    public StudentId getStudentid() {
         return studentid;
     }
 
-    public void setStudentid(StudentId user_id) {
-        this.studentid = user_id;
+    public void setStudentid(StudentId studentid) {
+        this.studentid = studentid;
     }
+
 
     @Column(name = "Description")
     public String getDescription() {
@@ -49,7 +49,12 @@ public class Student  implements Serializable{
         this.description = description;
     }
 
-    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "students")
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name="Tutorials_Students",
+            joinColumns = {@JoinColumn(name="Students_student_id",referencedColumnName = "student_id",nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name="Tutorials_tutorial_id",referencedColumnName = "tutorial_id",nullable = false)}
+    )
     public Set<Tutorial>  getTutorials() {
         return this.tutorials;
     }

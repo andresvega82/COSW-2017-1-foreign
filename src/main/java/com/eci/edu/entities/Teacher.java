@@ -61,7 +61,7 @@ public class Teacher implements Serializable {
     }
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name="Teachers_teacher_id"), @JoinColumn(name = "Users_user_id")})
+    @JoinColumns({@JoinColumn(name="Teachers_teacher_id"), @JoinColumn(name = "tutorial_id")})
     public List<Tutorial> getTutorials() {
         return tutorials;
     }

@@ -25,13 +25,14 @@ public class User implements Serializable {
     private String country;
     private Blob photo;
     private Integer age;
+    private int CreditCard_payment_id;
     private Set<Languaje> languajes = new HashSet<>(0);
 
     public User(){
 
     }
 
-    public User(String id, String name, String lastName, String email, String phone, String country, Integer Age) {
+    public User(String id, String name, String lastName, String email, String phone, String country, Integer Age,int creditCard) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
@@ -39,6 +40,7 @@ public class User implements Serializable {
         this.country = country;
         this.user_id = id;
         this.age = Age;
+        this.CreditCard_payment_id = creditCard;
     }
 
     public User(String id, String name, String lastName, String email, String phone, String country, Integer Age, Set<Languaje> languajes) {
@@ -50,6 +52,7 @@ public class User implements Serializable {
         this.user_id = id;
         this.age = Age;
         this.languajes = languajes;
+
     }
 
 
@@ -142,6 +145,14 @@ public class User implements Serializable {
         this.languajes = languajes;
     }
 
+    @Column
+    public int getCreditCard_payment_id() {
+        return CreditCard_payment_id;
+    }
+
+    public void setCreditCard_payment_id(int creditCard_payment_id) {
+        CreditCard_payment_id = creditCard_payment_id;
+    }
 
     @Override
     public String toString(){
