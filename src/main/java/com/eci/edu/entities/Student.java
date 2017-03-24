@@ -52,8 +52,8 @@ public class Student  implements Serializable{
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name="Tutorials_Students",
-            joinColumns = {@JoinColumn(name="Students_student_id",referencedColumnName = "student_id",nullable = false)},
-            inverseJoinColumns = {@JoinColumn(name="Tutorials_tutorial_id",referencedColumnName = "tutorial_id",nullable = false)}
+            joinColumns = {@JoinColumn(name="Students_student_id",referencedColumnName = "student_id",nullable = false),@JoinColumn(name="User_user_id",referencedColumnName = "Users_user_id")},
+            inverseJoinColumns = {@JoinColumn(name="Tutorials_tutorial_id",referencedColumnName = "tutorial_id",nullable = false),@JoinColumn(name="Teachers_teacher_id",referencedColumnName = "Teachers_teacher_id"),@JoinColumn(name="Teacher_languaje_id",referencedColumnName = "languaje_id")}
     )
     public Set<Tutorial>  getTutorials() {
         return this.tutorials;
