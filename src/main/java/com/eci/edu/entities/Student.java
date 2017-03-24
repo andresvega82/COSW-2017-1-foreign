@@ -10,13 +10,20 @@ import java.util.Set;
  */
 @Entity
 @Table(name="Students")
-public class Student implements Serializable {
-    private User_user_id users_user_id;
+public class Student  implements Serializable{
+    private StudentId studentid;
     private String description= null;
+    private Set<Tutorial> tutorials = new HashSet<>(0);
 
-    public Student(User_user_id nombreUsuario, String d){
-        this.users_user_id=nombreUsuario;
+    public Student(StudentId nombreUsuario, String d){
+        this.studentid = nombreUsuario;
         this.description=d;
+    }
+
+    public Student(StudentId nombreUsuario, String d, Set tutorials){
+        this.studentid = nombreUsuario;
+        this.description=d;
+        this.tutorials = tutorials;
     }
 
     public Student(){
@@ -25,12 +32,12 @@ public class Student implements Serializable {
 
 
     @EmbeddedId
-    public User_user_id getUsers_user_id() {
-        return users_user_id;
+    public StudentId getStudentId() {
+        return studentid;
     }
 
-    public void setUsers_user_id(User_user_id users_user_id) {
-        this.users_user_id = users_user_id;
+    public void setStudentid(StudentId user_id) {
+        this.studentid = user_id;
     }
 
     @Column(name = "Description")
@@ -40,6 +47,15 @@ public class Student implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "students")
+    public Set<Tutorial>  getTutorials() {
+        return this.tutorials;
+    }
+
+    public void setTutorials(Set tutorials) {
+        this.tutorials = tutorials;
     }
 
 

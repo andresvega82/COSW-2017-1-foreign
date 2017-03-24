@@ -12,8 +12,6 @@ import org.hibernate.cfg.Configuration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import java.util.Date;
-
 
 @SpringBootApplication
 @EnableJpaRepositories("eci.edu.repository")
@@ -27,7 +25,7 @@ public class CoswApplication {
 		Session s=sf.openSession();
 		Transaction tx=s.beginTransaction();
 		//s.saveOrUpdate(new User("aaa123","name","lastname","correo","1234456","Pais",23));
-		//s.saveOrUpdate(new Student(new User_user_id(1,"aaa123"),"torres"));
+		//s.saveOrUpdate(new Student(new StudentId(1,"aaa123"),"torres"));
 
 		//s.saveOrUpdate(new User("Sebas_Porras","name","lastname","correo","1234456","Pais",23));
 		//s.saveOrUpdate(new Teacher(new TeacherId(1, "Sebas_Porras"), "sebis", null));
@@ -48,7 +46,7 @@ public class CoswApplication {
 		configuration.addAnnotatedClass(CreditCard.class);
 		configuration.addAnnotatedClass(Languaje.class);
 		configuration.addAnnotatedClass(Student.class);
-		configuration.addAnnotatedClass(User_user_id.class);
+		configuration.addAnnotatedClass(StudentId.class);
 
 		configuration.addAnnotatedClass(TeacherId.class);
 		configuration.addAnnotatedClass(Teacher.class);

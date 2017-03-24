@@ -14,10 +14,10 @@ import java.util.ArrayList;
  */
 @RestController
 @RequestMapping(value ="/clients")
-public class RestClients {
+public class StudentsController {
     @Autowired
     private InterfaceStudents manejador;
-
+/*
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addClient(@RequestBody Student cliente) throws Exception{
         manejador.registrarCliente(cliente);
@@ -35,6 +35,8 @@ public class RestClients {
      @return Obtiene un cliente en particular
      */
 
+    /*
+
     @RequestMapping(value ="/{id}", method = RequestMethod.GET)
     public Student getParticularClient(@PathVariable("id") Integer id) throws Exception {
         System.out.println("entro en el java rest get usuario");
@@ -45,11 +47,12 @@ public class RestClients {
     public ResponseEntity<?> register(@RequestBody String params) throws Exception{
         /**
         params = params.substring(1,params.length()-1);
-        String[] userParams = params.split(",");
+        StrigetParticularClientng[] userParams = params.split(",");
         //User user = new User(userParams[1],userParams[2],userParams[3],userParams[4],userParams[5],userParams[6]);
         if(!manejador.registerUser(user) || !userParams[7].equals(userParams[6]))return new ResponseEntity<>(HttpStatus.CONFLICT);
          **/
+    /*
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
-
+*/
 }

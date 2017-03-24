@@ -1,9 +1,8 @@
 package com.eci.edu.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by tata on 19/03/17.
@@ -18,8 +17,6 @@ public class Languaje {
     public Languaje(){
 
     }
-
-
     public Languaje(int lenguajeId, String desciption){
         this.lenguajeId = lenguajeId;
         this.desciption = desciption;
@@ -44,4 +41,5 @@ public class Languaje {
     public void setDesciption(String desciption) {
         this.desciption = desciption;
     }
+
 }

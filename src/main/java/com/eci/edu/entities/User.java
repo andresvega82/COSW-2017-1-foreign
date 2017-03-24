@@ -1,11 +1,15 @@
 package com.eci.edu.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Blob;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  *
@@ -21,6 +25,7 @@ public class User implements Serializable {
     private String country;
     private Blob photo;
     private Integer age;
+    private Set<Languaje> languajes = new HashSet<>(0);
 
     public User(){
 
@@ -35,6 +40,18 @@ public class User implements Serializable {
         this.user_id = id;
         this.age = Age;
     }
+
+    public User(String id, String name, String lastName, String email, String phone, String country, Integer Age, Set<Languaje> languajes) {
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.country = country;
+        this.user_id = id;
+        this.age = Age;
+        this.languajes = languajes;
+    }
+
 
 
 
@@ -112,6 +129,19 @@ public class User implements Serializable {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    //@ManyToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumns({@JoinColumn(name="Users_user_id",nullable = false)})
+
+    public Set<Languaje> getLanguajes() {
+        return languajes;
+    }
+
+    public void setLanguajes(Set<Languaje> languajes) {
+        this.languajes = languajes;
+    }
+
 
     @Override
     public String toString(){

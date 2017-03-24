@@ -1,8 +1,13 @@
 package com.eci.edu.entities;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Blob;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tata on 19/03/17.
@@ -14,6 +19,7 @@ public class Teacher implements Serializable {
     private String description = null;
     private TeacherId users_user_id;
     private Blob validateDocument;
+    private List<Tutorial> tutorials = new ArrayList<Tutorial>();
 
     public Teacher(){
 
@@ -53,4 +59,15 @@ public class Teacher implements Serializable {
     public void setValidateDocument(Blob validateDocument) {
         this.validateDocument = validateDocument;
     }
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumns({@JoinColumn(name="Teachers_teacher_id"), @JoinColumn(name = "Users_user_id")})
+    public List<Tutorial> getTutorials() {
+        return tutorials;
+    }
+
+    public void setTutorials(List<Tutorial> tutorials) {
+        this.tutorials = tutorials;
+    }
+
 }

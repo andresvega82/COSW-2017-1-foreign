@@ -15,14 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/tutores")
-public class TutorController {
+public class TeacherController {
 
     @Autowired
     private InterfaceTeachers service;
-
+/*
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> getTutores(){
         System.out.println("Lista de los tutores get en el api");
         return new ResponseEntity<>(service.getTutores(), HttpStatus.ACCEPTED);
     }
+    */
 }
