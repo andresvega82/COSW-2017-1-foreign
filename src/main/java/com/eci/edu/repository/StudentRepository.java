@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Created by  on 19/03/17.
  */
-//extends JpaRepository<Student, String>
 public interface StudentRepository extends JpaRepository < Student, User_user_id > {
 
     /*@Query("from Students s where s.student_id= :userId ")

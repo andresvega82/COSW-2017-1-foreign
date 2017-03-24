@@ -9,11 +9,15 @@ import org.hibernate.service.ServiceRegistry;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.hibernate.cfg.Configuration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.Date;
 
 
 @SpringBootApplication
+@EnableJpaRepositories("eci.edu.repository")
+@EntityScan("eci.edu.entities")
 public class CoswApplication {
 
 	public static void main(String[] args) {
@@ -58,10 +62,4 @@ public class CoswApplication {
 		SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
 		return sessionFactory;
 	}
-
-
-
 }
-
-
-
