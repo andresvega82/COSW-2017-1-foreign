@@ -13,7 +13,7 @@
     <!-- Hero -->
     <section id="hero" class="container">
         <header>
-            <h4>REGISTRO<br /></h4>
+            <h2>REGISTRO<br /></h2>
         </header>
         <ul class="actions">
             <li> Nombre</li>
@@ -21,15 +21,11 @@
         </ul>
         <ul class="actions">
             <li> Apellidos</li>
-            <li><input type="text" name="apellido" id="apellido" ng-model="datos.lastname"  /></li>
+            <li><input type="text" name="apellido" id="apellido" ng-model="datos.lastName"  /></li>
         </ul>
         <ul class="actions">
             <li> Edad</li>
             <li><input type="number" name="age" id="age" ng-model="datos.age" /></li>
-        </ul>
-        <ul class="actions">
-            <li> Fecha</li>
-            <li><input type="date" name="date" id="date" ng-model="datos.date" /></li>
         </ul>
         <ul class="actions">
             <li>Email</li>
@@ -38,10 +34,6 @@
         <ul class="actions">
             <li>Numero de Telefono</li>
             <li><input type="text" name="celular" id="celular"  ng-model="datos.phone"   /></li>
-        </ul>
-        <ul class="actions">
-            <li>Numero de tarjeta de credito</li>
-            <li><input type="number" name="tarjeta" id="tarjeta"  ng-model="datos.CreditCard_payment_id"   /></li>
         </ul>
         <ul class="actions">
             <li>País</li>
@@ -55,6 +47,26 @@
             <li>Confirmar Contraseña</li>
             <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" ng-keyup="$event.keyCode == 13 && registrar()"/></li>
         </ul>
+        <header>
+            <h3>Datos tarjeta de cretido</h3>
+        </header>
+        <ul class="actions">
+            <li> Numero de tarjeta credito</li>
+            <li><input type="number" name="number" id="cNumber" ng-model="datos.cardNumber" /></li>
+        </ul>
+        <ul class="actions">
+            <li> Fecha de expiración</li>
+            <li><input type="month" name="date" id="month" ng-model="datos.expirationDate" /></li>
+        </ul>
+        <ul class="actions">
+            <li> Codigo postal</li>
+            <li><input type="number" name="date" id="postal" ng-model="datos.postalCode" /></li>
+        </ul>
+        <ul class="actions">
+            <li> CVV</li>
+            <li><input type="number" name="number" id="cvv" ng-model="datos.cvv" /></li>
+        </ul>
+
         <ul class="actions">
             <button ng-click="registrar()">Registrarme</button>
         </ul>

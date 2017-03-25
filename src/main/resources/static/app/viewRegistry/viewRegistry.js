@@ -13,7 +13,9 @@ angular.module('myApp.viewRegistry', ['ngRoute'])
         $scope.datos = {};
         $scope.registrar = function (){
             RegisterFactory.register($scope.datos.email, $scope.datos.password).then(function(data){
-                registerPost.addTodo({user_id:data.uid, name:$scope.datos.name, lastName:$scope.datos.lastname, email:$scope.datos.email, phone:$scope.datos.phone, country:$scope.datos.country, age:$scope.datos.age});
+                $scope.datos.user_id=data.uid;
+                $scope.datos.paymentId=$scope.datos.cardNumber;
+                registerPost.addTodo($scope.datos);
                 $location.path("/login");
             });
 

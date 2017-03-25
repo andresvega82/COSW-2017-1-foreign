@@ -1,5 +1,6 @@
 package com.eci.edu.services;
 
+import com.eci.edu.entities.CreditCard;
 import com.eci.edu.entities.User;
 import org.springframework.stereotype.Service;
 import org.hibernate.Session;
@@ -21,11 +22,20 @@ public class UserServicesStub {
         Session s=sf.openSession();
         Transaction tx=s.beginTransaction();
         s.saveOrUpdate(user);
-        //s.saveOrUpdate(new User("aaa123","name","lastname","correo","1234456","Pais",23));
         tx.commit();
         s.close();
         sf.close();
 
+    }
+
+    public void saveCreditCard(CreditCard creditCard){
+        SessionFactory sf=getSessionFactory();
+        Session s=sf.openSession();
+        Transaction tx=s.beginTransaction();
+        s.saveOrUpdate(creditCard);
+        tx.commit();
+        s.close();
+        sf.close();
     }
     public static SessionFactory getSessionFactory() {
         // loads configuration and mappings
