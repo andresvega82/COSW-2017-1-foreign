@@ -1,6 +1,8 @@
 package com.eci.edu.services;
 
 import java.util.*;
+
+import com.eci.edu.entities.Teacher;
 import com.eci.edu.entities.Tutorial;
 import org.springframework.stereotype.Service;
 
@@ -36,7 +38,7 @@ public class TutorialServicesStub implements InterfaceTutorials {
     }
 
     @Override
-    public List<Tutorial> getTutorialsByParams(String params) {
+    public List<Teacher> getTutorialsByParams(String params) {
         return null;
     }
 }

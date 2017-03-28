@@ -16,6 +16,7 @@ angular.module('myApp.searchTutor', ['ngRoute'])
         $scope.busy = false;
         $scope.tutoresListAll = []
         $rootScope.id = 1;
+        lenguaje = sessionStorage.getItem('lenguaje');
 
         console.log("buscando la informacion de los tutores");
         tutores.get()

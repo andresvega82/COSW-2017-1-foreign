@@ -1,5 +1,6 @@
 package com.eci.edu.services;
 
+import com.eci.edu.entities.Teacher;
 import com.eci.edu.entities.Tutorial;
 
 import java.util.*;
@@ -13,5 +14,5 @@ public interface InterfaceTutorials {
     public void addTutorial (Tutorial t);
     public List<Tutorial> getTutorialByUserId(Integer id);
 
-    public List<Tutorial> getTutorialsByParams(String params);
+    public List<Teacher> getTutorialsByParams(String params);
 }

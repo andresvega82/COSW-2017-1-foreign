@@ -15,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 public class TutorialController {
 
     @Autowired
-    private InterfaceTutorials services;
+    InterfaceTutorials services;
 
 
     @RequestMapping(method = RequestMethod.GET, value = "/git add/{params}")

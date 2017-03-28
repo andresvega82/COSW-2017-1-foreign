@@ -1,5 +1,6 @@
 package com.eci.edu.services;
 
+import com.eci.edu.entities.Teacher;
 import com.eci.edu.entities.Tutorial;
 import com.eci.edu.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import java.util.List;
 public class TutorialServicesImpl implements InterfaceTutorials{
 
     @Autowired
-    TutorialRepository service;
+    TutorialRepository tutorialRepository;
 
     @Override
     public void updateTutorial(Tutorial t) {
@@ -25,12 +26,12 @@ public class TutorialServicesImpl implements InterfaceTutorials{
     @Override
     public List<Tutorial> getTutorials() {
 
-        return service.findAll();
+        return tutorialRepository.findAll();
     }
 
     @Override
     public void addTutorial(Tutorial t) {
-        service.save(t);
+        tutorialRepository.save(t);
     }
 
     @Override
@@ -39,7 +40,7 @@ public class TutorialServicesImpl implements InterfaceTutorials{
     }
 
     @Override
-    public List<Tutorial> getTutorialsByParams(String params) {
-        return service.getTutorialByParams(params);
+    public List<Teacher> getTutorialsByParams(String params){
+        return null;//tutorialRepository.getTutorialByParams(params);
     }
 }

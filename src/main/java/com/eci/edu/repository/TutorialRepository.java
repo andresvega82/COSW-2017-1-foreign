@@ -13,12 +13,12 @@ import java.util.List;
  * Created by tata on 19/03/17.
  */
 
-//extends JpaRepository<Tutorial, Integer>
+
 public interface TutorialRepository extends JpaRepository<Tutorial, TutorialId> {
 
     //@Query("from Tutorial t where t.date = params")
-    @Query("from Teacher as tutor inner join tutor.users_user_id.teacher_id as tutorId where tutorId = (select t.idTutor.TeachersId from Tutorial as t inner join t.idTutor.LenguajeId u where u.desciption=:params)")
-    List<Teacher> getTutorialByParams(@Param(value = "params") String params);
+    //@Query("from Teacher as tutor inner join tutor.users_user_id.teacher_id as tutorId where tutorId = (select t.idTutor.TeachersId from Tutorial as t inner join t.idTutor.LenguajeId u where u.desciption=:params)")
+    //List<Teacher> getTutorialByParams(@Param(value = "params") String params);
 
 
     /*@Query("SELECT Nombre_Tutor, Apellido_Tutor, cost, Idioma, Duracion, Fecha FROM (SELECT Nombre_Tutor, Apellido_Tutor, cost, lenguaje_id, duration as Duracion, date as Fecha FROM (SELECT Teachers_teacher_id, date, duration,lenguaje_id, cost, state
