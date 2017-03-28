@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e54df0-67c0-453d-b387-0c02d388bc82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/COSW.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/eci/edu/CoswApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/eci/edu/CoswApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/eci/edu/entities/Tutorial.class" afterPath="$PROJECT_DIR$/target/classes/com/eci/edu/entities/Tutorial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/eci/edu/entities/User.class" afterPath="$PROJECT_DIR$/target/classes/com/eci/edu/entities/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/eci/edu/CoswApplicationTests.class" afterPath="$PROJECT_DIR$/target/test-classes/com/eci/edu/CoswApplicationTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/CoswApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/CoswApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/TutorialController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/TutorialController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/InterfaceTutorials.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/InterfaceTutorials.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/eci/edu/CoswApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/eci/edu/CoswApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/searchTutor.js" afterPath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/searchTutor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/viewTutorial.js" afterPath="$PROJECT_DIR$/target/classes/static/app/viewTutorial/viewTutorial.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +19,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TutorialRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TutorialRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -68,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TutorialServicesImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TutorialServicesImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -126,14 +127,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/InterfaceTutorials.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesStub.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/StudentServicesImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/TutorialController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/CoswApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eci/edu/CoswApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java" />
       </list>
     </option>
   </component>
@@ -891,22 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/controllers/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -930,14 +915,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/CoswApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,6 +953,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TeacherRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/CoswApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/services/TutorialServicesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -985,14 +994,6 @@
             <element signature="e#697#698#0" expanded="true" />
             <element signature="e#739#740#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/edu/repository/TutorialRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
