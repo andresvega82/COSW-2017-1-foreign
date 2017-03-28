@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * Created on 17/02/17.
  */
 
-@Service
+//@Service
 public class TutorialServicesStub implements InterfaceTutorials {
 
 
@@ -32,6 +32,11 @@ public class TutorialServicesStub implements InterfaceTutorials {
     }
     @Override
     public List<Tutorial> getTutorialByUserId(Integer id){
+        return null;
+    }
+
+    @Override
+    public List<Tutorial> getTutorialsByParams(String params) {
         return null;
     }
 }

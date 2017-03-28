@@ -22,7 +22,7 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         $scope.timeMin = null;
         $scope.busy = false;
         $scope.tutorialListAll = []
-
+        sessionStorage.setItem('lenguaje',$scope.languaje);
 
         $scope.agregarTutoria = function(){
             if ($scope.languaje!="") {

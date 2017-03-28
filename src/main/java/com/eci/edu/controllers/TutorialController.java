@@ -18,12 +18,13 @@ public class TutorialController {
     private InterfaceTutorials services;
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/tutorials")
-    public ResponseEntity<?> getTutorials(){
-        return new ResponseEntity<>(services.getTutorials(), HttpStatus.ACCEPTED);
+    @RequestMapping(method = RequestMethod.GET, value = "/git add/{params}")
+    public ResponseEntity<?> getTutorials(@PathVariable String params){
+        return new ResponseEntity<>(services.getTutorialsByParams(params), HttpStatus.ACCEPTED);
     }
 
     @RequestMapping(method = RequestMethod.POST)
+    //posttutoria
     public void saveTutorial(@RequestBody Tutorial tutorial){
         System.out.println("LLEGO AL POST!");
        // System.out.println("entro guardar una tutoria api"+ tutorial.getLanguajeId()+"   "+ tutorial.getDate());
@@ -34,6 +35,7 @@ public class TutorialController {
         }
     }
     @RequestMapping (value="/{id}",method = RequestMethod.POST)
+    //
     public void postTutoria(@PathVariable String id, @RequestBody Tutorial tutorial){
         System.out.println(id + " -----tutoria agregada api------ ");
         services.addTutorial(tutorial);
