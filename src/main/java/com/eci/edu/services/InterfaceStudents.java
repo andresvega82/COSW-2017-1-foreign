@@ -13,5 +13,6 @@ public interface InterfaceStudents {
     void registrarCliente(Student student);
     ArrayList<Student> getClientes();
     Student getClientePorId(Integer id);
+    public User  getUserPorId (String nombre);
     boolean registerUser (User user);
 }

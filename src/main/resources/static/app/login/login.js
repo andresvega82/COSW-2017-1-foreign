@@ -13,6 +13,7 @@ angular.module('myApp.login', ['ngRoute'])
     $scope.login = function () {
         RegisterFactory.signIn($scope.credentials.username, $scope.credentials.password).then(function (data){
             //console.log("Entro");
+            localStorage.setItem("usuario", $scope.credentials.username);
             $scope.error = false;
             $scope.authenticated = true;
             $location.path("/viewTutorial");

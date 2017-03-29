@@ -50,7 +50,13 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
             });
     })
 
+
+
+
+
+
     .factory('clientById', function($resource) {
-        return $resource('/clients/:id',{id:"@_id"},{'get': { method: 'GET'}});
-    });
+        return $resource('/clients/:username',{username:"@username"},{'get': { method: 'GET',isArray: true}});
+    }
+    );
 

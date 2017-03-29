@@ -1,6 +1,7 @@
 package com.eci.edu.controllers;
 
 import com.eci.edu.entities.Student;
+import com.eci.edu.entities.User;
 import com.eci.edu.services.InterfaceStudents;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by 2098165 on 2/16/17.
@@ -17,6 +19,20 @@ import java.util.ArrayList;
 public class StudentsController {
     @Autowired
     private InterfaceStudents manejador;
+
+    @RequestMapping(path = "/{username}",method = RequestMethod.GET)
+    @ResponseBody
+    public ResponseEntity<List<User>> getDatosUsuario(@PathVariable String username) {
+        System.out.println("Entro !!!");
+        try {
+            List<User> lista = new ArrayList<>();
+            lista.add(manejador.getUserPorId(username));
+            return ResponseEntity.ok().body(lista);
+        } catch (Exception ex) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 /*
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addClient(@RequestBody Student cliente) throws Exception{

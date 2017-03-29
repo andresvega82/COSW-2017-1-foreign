@@ -10,7 +10,7 @@ import java.util.Hashtable;
 /**
  * Created by 2098165 on 2/16/17.
  */
-@Service
+//@Service
 public class StudentServicesStub implements InterfaceStudents {
     public Hashtable<String, User> stubMemory = new Hashtable<>();
     public ArrayList<Student> clientes = new ArrayList<>();
@@ -30,6 +30,11 @@ public class StudentServicesStub implements InterfaceStudents {
         Student fili= null;//new Student(2, "Juan","jehova", "correo", 654, "juana", "brasil", "bogota","español" );
         clientes.add(fili);
         return c;
+    }
+
+    @Override
+    public User getUserPorId(String nombre) {
+        return null;
     }
 
     @Override
