@@ -25,17 +25,11 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
 
 .controller('appController',['$scope','$http','$location',function($scope,$http,$location){
     $scope.logout = function () {
-        $http.post('/logout', {}).then(successCallback, errorCallback);
-        function successCallback(data){
-            $scope.authenticated = false;
+        $scope.authenticated = false;
             if($scope.authenticated){
                 $scope.authenticated = false;
             }
             window.location.href = "/app/index.html";
-        };
-        function errorCallback(error){
-            $scope.authenticated = false;
-        };
     };
 }])
 ;

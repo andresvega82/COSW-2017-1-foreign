@@ -12,9 +12,12 @@ angular.module('myApp.viewRegistry', ['ngRoute'])
     .controller('viewRegistryCtrl', ['$scope', '$location','$http', 'RegisterFactory','registerPost',function($scope,$location,$http,RegisterFactory,registerPost) {
         $scope.datos = {};
         $scope.registrar = function (){
+            console.log("Entro al registrar");
+
             RegisterFactory.register($scope.datos.email, $scope.datos.password).then(function(data){
                 $scope.datos.user_id=data.uid;
                 $scope.datos.paymentId=$scope.datos.cardNumber;
+                console.log($scope.datos);
                 registerPost.addTodo($scope.datos);
                 $location.path("/login");
             });
