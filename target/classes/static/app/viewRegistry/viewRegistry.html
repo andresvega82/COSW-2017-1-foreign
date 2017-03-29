@@ -7,71 +7,109 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
 </head>
-<body>
 
-<div id="header-wrapper">
-    <!-- Hero -->
-    <section id="hero" class="container">
-        <header>
-            <h2>REGISTRO<br /></h2>
-        </header>
-        <ul class="actions">
-            <li> Nombre</li>
-            <li><input type="text" name="name" id="name" ng-model="datos.name" /></li>
-        </ul>
-        <ul class="actions">
-            <li> Apellidos</li>
-            <li><input type="text" name="apellido" id="apellido" ng-model="datos.lastName"  /></li>
-        </ul>
-        <ul class="actions">
-            <li> Edad</li>
-            <li><input type="number" name="age" id="age" ng-model="datos.age" /></li>
-        </ul>
-        <ul class="actions">
-            <li>Email</li>
-            <li><input type="text" name="email" id="email" ng-model="datos.email"  /></li>
-        </ul>
-        <ul class="actions">
-            <li>Numero de Telefono</li>
-            <li><input type="text" name="celular" id="celular"  ng-model="datos.phone"   /></li>
-        </ul>
-        <ul class="actions">
-            <li>País</li>
-            <li><input type="text" name="pais" id="pais" ng-model="datos.country"  /></li>
-        </ul>
-        <ul class="actions">
-            <li>Contraseña</li>
-            <li><input type="password" name="contraseña" id="contraseña" ng-model="datos.password"  /></li>
-        </ul>
-        <ul class="actions">
-            <li>Confirmar Contraseña</li>
-            <li><input type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" ng-keyup="$event.keyCode == 13 && registrar()"/></li>
-        </ul>
-        <header>
-            <h3>Datos tarjeta de cretido</h3>
-        </header>
-        <ul class="actions">
-            <li> Numero de tarjeta credito</li>
-            <li><input type="number" name="number" id="cNumber" ng-model="datos.cardNumber" /></li>
-        </ul>
-        <ul class="actions">
-            <li> Fecha de expiración</li>
-            <li><input type="month" name="date" id="month" ng-model="datos.expirationDate" /></li>
-        </ul>
-        <ul class="actions">
-            <li> Codigo postal</li>
-            <li><input type="number" name="date" id="postal" ng-model="datos.postalCode" /></li>
-        </ul>
-        <ul class="actions">
-            <li> CVV</li>
-            <li><input type="number" name="number" id="cvv" ng-model="datos.cvv" /></li>
-        </ul>
+<body class="right-sidebar">
+    <!-- Main -->
+    <div class="wrapper">
+        <div class="container" id="main">
+            <div id="footer" class="container">
+                <header class="major">
+                    <h2>Registro</h2>
+                    <p>Unete a FOREING haciendo parte de la comunidad y empieza a estudiar <br />
+                        de la manera más divertida aquellos idiomas que desees aprender.</p>
+                </header>
+                <div class="row">
+                    <section class="6u 12u(narrower)">
 
-        <ul class="actions">
-            <button ng-click="registrar()">Registrarme</button>
-        </ul>
-    </section>
-</div>
+                        <form method="post" action="#">
+
+                            <h2>Datos Usuario</h2>
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Nombre" type="text" name="name" id="name" ng-model="datos.name"/>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Apellidos" type="text" name="apellido" id="apellido" ng-model="datos.lastName"  /></li>
+                                </div>
+                            </div>
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Edad" type="number" name="age" id="age" ng-model="datos.age" /></li>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Email" type="text" name="email" id="email" ng-model="datos.email"  /></li>
+                                </div>
+                            </div>
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Numero de Telefono" type="text" name="celular" id="celular"  ng-model="datos.phone"   /></li>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Pais" type="text" name="pais" id="pais" ng-model="datos.country"  /></li>
+                                </div>
+                            </div>
+
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Contraseña" type="password" name="contraseña" id="contraseña" ng-model="datos.password"  /></li>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Confirmar Contraseña" type="password" name="contraseñaValida" id="contraseñaValida"  ng-model="datos.validate" ng-keyup="$event.keyCode == 13 && registrar()"/></li>
+                                </div>
+                            </div>
+
+                            <div class="row 50%">
+                                <div class="12u">
+                                    <textarea name="Description" placeholder="Descripcion"></textarea>
+                                </div>
+                            </div>
+
+                            <h2>Datos tarjeta de credito</h2>
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Numero de tarjeta de credito" type="number" name="number" id="cNumber" ng-model="datos.cardNumber" /></li>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Fecha de expiracion" type="month" name="date" id="month" ng-model="datos.expirationDate" /></li>
+                                </div>
+                            </div>
+                            <div class="row 50%">
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="Codigo postal" type="number" name="date" id="postal" ng-model="datos.postalCode" /></li>
+                                </div>
+                                <div class="6u 12u(mobile)">
+                                    <input placeholder="CVV" type="number" id="cvv" ng-model="datos.cvv" /></li>
+                                </div>
+                            </div>
+
+                            <div class="row 150%">
+                                <div class="12u">
+                                    <ul class="actions">
+                                        <button ng-click="registrar()">Registrarme</button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="6u 12u(narrower)">
+                        <h3>Datos Tarjeta de Credito </h3>
+                        <div class="row 0%">
+
+                            <ul class="divided icons 6u 12u(mobile)">
+                                <li class="icon fa-twitter"><a href="#"><span class="extra">twitter.com/</span>Foreing</a></li>
+                                <li class="icon fa-facebook"><a href="#"><span class="extra">facebook.com/</span>Foreing</a></li>
+                                <li class="icon fa-instagram"><a href="#"><span class="extra">instagram.com/</span>Foreing</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="copyright" class="container">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li><li>Design: Sebastian Amaya, Nicolas Morenos, Tatiana Higuera, Juan Gutierrez, Andres Vega, Nicolas Guzman.</li>
+            </ul>
+        </div>
+    </div>
 </body>
-
 </html>
