@@ -26,6 +26,7 @@ public class CoswApplication {
 		SessionFactory sf=getSessionFactory();
 		Session s=sf.openSession();
 		Transaction tx=s.beginTransaction();
+
 /*
 		s.saveOrUpdate(new CreditCard(10,13131,new Date(),9090,10));
 		s.saveOrUpdate(new User("gasds67","vega","vega","hotmail","34343","CTO",23,10));
@@ -35,6 +36,8 @@ public class CoswApplication {
 		s.saveOrUpdate(new Teacher(new TeacherId(1, "Sebas_Porras"), "sebis", null));
 		s.saveOrUpdate(new Languaje(1,"Español"));
 		s.saveOrUpdate(new Tutorial("cancelada", new Date(),50, new TutorialId(1, 1,1), 2000, 2000));
+
+
 */
 
 		tx.commit();

@@ -1,5 +1,6 @@
 package com.eci.edu.controllers;
 import com.eci.edu.entities.Tutorial;
+import com.eci.edu.services.InterfaceTeachers;
 import com.eci.edu.services.InterfaceTutorials;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,11 +18,15 @@ public class TutorialController {
     @Autowired
     InterfaceTutorials services;
 
+    @Autowired
+    InterfaceTeachers service1;
 
     @RequestMapping(method = RequestMethod.GET, value = "/tutores/{params}")
     public ResponseEntity<?> getTutorials(@PathVariable String params){
         System.out.println("cargando los teachers para un lenguaje especifico");
-        return new ResponseEntity<>(services.getTutorialsByParams(params), HttpStatus.ACCEPTED);
+//        return new ResponseEntity<>(services.getTutorialsByParams(params), HttpStatus.ACCEPTED);
+        System.out.println(service1.getTutores());
+        return new ResponseEntity<>(service1.getTutores(), HttpStatus.ACCEPTED);
     }
 
     @RequestMapping(method = RequestMethod.POST)

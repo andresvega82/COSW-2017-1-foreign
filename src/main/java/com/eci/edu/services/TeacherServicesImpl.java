@@ -1,13 +1,21 @@
 package com.eci.edu.services;
 
 import com.eci.edu.entities.Teacher;
+import com.eci.edu.repository.TeacherRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by tata on 23/03/17.
  */
+@Service
 public class TeacherServicesImpl implements InterfaceTeachers{
+
+    @Autowired
+    TeacherRepository teacherRepository;
+
     @Override
     public void updateTutor(Teacher t) {
 
@@ -15,7 +23,7 @@ public class TeacherServicesImpl implements InterfaceTeachers{
 
     @Override
     public List<Teacher> getTutores() {
-        return null;
+        return teacherRepository.findAll();
     }
 
     @Override

@@ -16,7 +16,7 @@ public class Tutorial implements java.io.Serializable{
     private TutorialId idTutor;
     private int payment;
     private int cost;
-    private Set<Student> students = new HashSet<Student>();
+    //private Set<Student> students = new HashSet<Student>();
 
 
     public Tutorial(){
@@ -33,6 +33,7 @@ public class Tutorial implements java.io.Serializable{
         this.cost = cost;
     }
 
+    /**
     public Tutorial( String state, Date date, int duration, TutorialId idTutor, int payment, int cost, Set students){
         this.idTutor = idTutor;
         this.date = date;
@@ -43,7 +44,7 @@ public class Tutorial implements java.io.Serializable{
         this.cost = cost;
         this.students = students;
     }
-
+    **/
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "date")
     public Date getDate() {
@@ -102,7 +103,7 @@ public class Tutorial implements java.io.Serializable{
         this.idTutor = idTutor;
     }
 
-
+    /**
     @ManyToMany(cascade=CascadeType.ALL, mappedBy = "tutorials" )
     public Set<Student> getStudents() {
         return this.students;
@@ -111,4 +112,5 @@ public class Tutorial implements java.io.Serializable{
     public void setStudents(Set<Student > students) {
         this.students = students;
     }
+    **/
 }

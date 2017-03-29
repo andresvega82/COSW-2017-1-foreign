@@ -13,18 +13,20 @@ import java.util.Set;
 public class Student  implements Serializable{
     private StudentId studentid;
     private String description= null;
-    private Set<Tutorial> tutorials = new HashSet<>(0);
+    //private Set<Tutorial> tutorials = new HashSet<>(0);
 
     public Student(StudentId nombreUsuario, String d){
         this.studentid = nombreUsuario;
         this.description=d;
     }
 
+    /**
     public Student(StudentId nombreUsuario, String d, Set tutorials){
         this.studentid = nombreUsuario;
         this.description=d;
         this.tutorials = tutorials;
     }
+     **/
 
     public Student(){
 
@@ -49,6 +51,8 @@ public class Student  implements Serializable{
         this.description = description;
     }
 
+
+    /**
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name="Tutorials_Students",
@@ -62,6 +66,7 @@ public class Student  implements Serializable{
     public void setTutorials(Set tutorials) {
         this.tutorials = tutorials;
     }
+    **/
 
 
 }
