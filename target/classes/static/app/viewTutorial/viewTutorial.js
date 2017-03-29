@@ -17,7 +17,8 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
         $scope.tutorialId = null;
         $scope.languaje = "";
         $scope.date = "";
-        $scope.tutoresListAll = [];
+        $scope.busy = false;
+        $scope.tutoresListAll = []
         $rootScope.id = 1;
 
         $scope.buscarTutorias = function(){
@@ -30,11 +31,13 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
                             console.log("Buscando tutorias")
                             });*/
 
-                        tutores.get()
+                        var consulta = {params: $scope.languaje}
+                        tutores.get(consulta)
                             .$promise.then(
                             //success
-                            console.log("realiza la promesa")
+
                             function( value ){
+                                console.log("realiza la promesa")
                                 for(var i=0;i<value.length; i++){
                                     $scope.tutoresListAll.push(value[i]);
                                     console.info(value[i]);

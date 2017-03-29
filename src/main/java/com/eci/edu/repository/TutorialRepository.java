@@ -16,8 +16,8 @@ import java.util.List;
 
 public interface TutorialRepository extends JpaRepository<Tutorial, TutorialId> {
 
-    //@Query("from Tutorial t where t.date = params")
-    //@Query("from Teacher as tutor inner join tutor.users_user_id.teacher_id as tutorId where tutorId = (select t.idTutor.TeachersId from Tutorial as t inner join t.idTutor.LenguajeId u where u.desciption=:params)")
+    //@Query("SELECT * FROM Teacher INNER JOIN (SELECT * FROM Tutorial INNER JOIN Languaje ON Tutorial. idTutor	.LenguajeId = Languaje.lenguajeId WHERE Languaje.desciption = 'Español') AS tabla ON Teacher.users_user_id.teacher_id = tabla.idTutor.TeachersId")
+//    @Query("from Teacher as tutor inner join tutor.users_user_id.teacher_id as tutorId where tutorId = (select t.idTutor.TeachersId from Tutorial as t inner join t.idTutor.LenguajeId u where u.desciption=:params)")
     //List<Teacher> getTutorialByParams(@Param(value = "params") String params);
 
 

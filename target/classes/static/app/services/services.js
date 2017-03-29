@@ -36,7 +36,7 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
 
     //tutores
     .factory('tutores', function($resource) {
-        return $resource('/tutores',{},
+        return $resource('/tutorial/tutores/:params',{params:"@_params"},
             { get: {
                 method: 'GET',
                 isArray: true
