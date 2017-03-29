@@ -28,6 +28,7 @@
 
                         <h3>Escoge el Idioma que deseas practicar</h3>
                         <ul class="actions">
+                            <li> Lenguaje</li>
                             <select ng-model = "languaje">
                                 <option value="" ng-model = "languaje" selected="selected">- seleccionar -</option>
                                 <option value="English" ng-model = "languaje">English</option>
@@ -41,26 +42,38 @@
                             <li> Fecha</li>
                             <li><input type="date" ng-model = "date" value="fecha Inicio" /></li>
                         </ul>
-                        <ul class="actions">
-                            <li> Hora Inicial</li>
-                            <li><input type="time" ng-model = "hour" name="hora"></li>
-                        </ul>
-                        <ul class="actions">
-                            <li> Duración de sesión</li>
-                            <li><input type="number" ng-model = "timeHour" name="quantity" min="0" max="12" value="0"></li>
-                            <li> Hora(s)</li>
-                            <li><input type="number" ng-model = "timeMin" name="quantity" min="0" max="60" value="30"></li>
-                            <li> minuto(s)</li>
-                        </ul>
                     </article>
                     <center>
                         <ul class="actions">
-                            <!-- <li><a ng-click="showAlert($event, tutorial)" class="md-primary md-raised" >Buscar tutor</a></li>-->
-                            <li><button href="#!/searchTutor" type="submit" ng-click="agregarTutoria()" class="button" >Aceptar</button></li>
-                            <li><a href="#!/searchTutor" class="button">Buscar tutor</a></li>
+                            <li><a type="submit" ng-click="buscarTutorias()" class="button" >Buscar Tutorias</a></li>
                         </ul>
                     </center>
+                    <div>
+                        <table class="table table-striped table-hover">
+                            <tbody>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Descripcion</th>
+                                <th>Horario</th>
+                                <th>Selección</th>
+                            </tr>
+                            <tr ng-repeat="todo in tutoresListAll">
+                                <td>{{todo.name}}</td>
+                                <td>{{todo.age}}</td>
+                                <td>{{todo.description}}</td>
+                                <td>{{todo.horario}}</td>
+                                <td><a ng-click="agregarTutor()" class="button">Seleccionar</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
+
+
+
+
                 <div class="4u 12u(narrower)">
 
                     <!-- Sidebar -->
