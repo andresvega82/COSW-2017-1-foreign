@@ -30,7 +30,22 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
                             console.log("Buscando tutorias")
                             });*/
 
-
+                        tutores.get()
+                            .$promise.then(
+                            //success
+                            console.log("realiza la promesa")
+                            function( value ){
+                                for(var i=0;i<value.length; i++){
+                                    $scope.tutoresListAll.push(value[i]);
+                                    console.info(value[i]);
+                                }
+                                $scope.busy=false;
+                            },
+                            //error
+                            function( error ){
+                                console.log(error)
+                            }
+                        );
                 }else{
                     alert("Todos los campos son obligatorios, falta la fecha");
                 }

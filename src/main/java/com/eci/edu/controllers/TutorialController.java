@@ -18,8 +18,9 @@ public class TutorialController {
     InterfaceTutorials services;
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/git add/{params}")
+    @RequestMapping(method = RequestMethod.GET, value = "/tutores/{params}")
     public ResponseEntity<?> getTutorials(@PathVariable String params){
+        System.out.println("cargando los teachers para un lenguaje especifico");
         return new ResponseEntity<>(services.getTutorialsByParams(params), HttpStatus.ACCEPTED);
     }
 
