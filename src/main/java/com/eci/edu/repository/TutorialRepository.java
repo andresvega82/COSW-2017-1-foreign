@@ -29,6 +29,6 @@ public interface TutorialRepository extends JpaRepository<Tutorial, TutorialId> 
     AS NIC JOIN (SELECT len.description AS Idioma, student_id, Lenguajes_lenguaje_id AS idio FROM (SELECT * FROM Students_Lenguajes AS SL JOIN Languajes AS la  ON SL.Lenguajes_lenguaje_id=la.lenguaje_id) AS len JOIN Students AS s ON s.student_id=len.Lenguajes_lenguaje_id) AS Dos ON NIC.lenguaje_id=Dos.idio")
     public List<Tutorial> getTutorials(@Param(value ="id") int id);*/
 
-    /*
-    public List<Tutorial> getHistoryById(id);*/
+    @Query("")
+    List<Tutorial> getHistoryById(@Param(value="id") Integer id);
 }

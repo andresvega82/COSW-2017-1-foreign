@@ -24,8 +24,8 @@ public class HistoryController {
     @Autowired
     InterfaceTeachers service1;
 
-    @RequestMapping(method = RequestMethod.GET, value = "/history/{params}")
+    @RequestMapping(method = RequestMethod.GET, value = "/history")
     public ResponseEntity<?> getTutorials(@PathVariable Integer id) {
-        return new ResponseEntity<>(services.getTutorialByUserId(id), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(services.getHistory(id), HttpStatus.ACCEPTED);
     }
 }
