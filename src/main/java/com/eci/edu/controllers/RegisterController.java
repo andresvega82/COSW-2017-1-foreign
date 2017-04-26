@@ -1,9 +1,7 @@
 package com.eci.edu.controllers;
 
 
-import com.eci.edu.entities.CreditCard;
-import com.eci.edu.entities.PostObject;
-import com.eci.edu.entities.User;
+import com.eci.edu.entities.*;
 import com.eci.edu.services.UserServicesStub;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,11 +25,27 @@ public class RegisterController {
     @RequestMapping(value="/addUser",method = RequestMethod.POST)
     public ResponseEntity<?> addUser(@RequestBody PostObject postObject) throws Exception{
         System.out.println(postObject.toString());
+
         CreditCard creditCard = new CreditCard(postObject.getPaymentId(), postObject.getCardNumber(), postObject.getExpirationDate(), postObject.getPostalCode(), postObject.getCvv());
         User user = new User(postObject.getUser_id(), postObject.getName(),postObject.getLastName(),postObject.getEmail(), postObject.getPhone(), postObject.getCountry(), postObject.getAge(),creditCard.getPaymentId());
         user.setLastName(postObject.getLastName());
         handler.saveCreditCard(creditCard);
         handler.saveUser(user);
+        if (postObject.getIsStudent().equals("Estudiante")){
+            Student student = new Student();
+            StudentId studentId = new StudentId();
+            student.setStudentid(studentId);
+            student.setStudentid(studentId);
+            handler.saveStudent(student);
+        }else if(postObject.getIsStudent().equals("Profesor")){
+            Teacher teacher= new Teacher();
+            TeacherId teacherId = new TeacherId();
+            teacherId.setUsers_user_id(user.getUser_id());
+            teacher.setUsers_user_id(teacherId);
+            handler.saveTeacher(teacher);
+        }else{
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }

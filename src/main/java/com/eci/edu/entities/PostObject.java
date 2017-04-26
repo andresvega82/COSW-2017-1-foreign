@@ -19,10 +19,18 @@ public class PostObject implements Serializable{
     private String phone;
     private String country;
     private Integer age;
-
     PostObject(){
 
     }
+    public String getIsStudent() {
+        return isStudent;
+    }
+
+    public void setIsStudent(String isStudent) {
+        this.isStudent = isStudent;
+    }
+
+    private String isStudent;
 
     public int getPaymentId() {
         return paymentId;

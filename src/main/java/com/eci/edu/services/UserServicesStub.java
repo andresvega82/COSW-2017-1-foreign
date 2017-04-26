@@ -1,6 +1,8 @@
 package com.eci.edu.services;
 
 import com.eci.edu.entities.CreditCard;
+import com.eci.edu.entities.Student;
+import com.eci.edu.entities.Teacher;
 import com.eci.edu.entities.User;
 import org.springframework.stereotype.Service;
 import org.hibernate.Session;
@@ -37,6 +39,30 @@ public class UserServicesStub {
         s.close();
         sf.close();
     }
+
+    public void saveTeacher(Teacher teacher){
+        SessionFactory sf = getSessionFactory();
+        Session s=sf.openSession();
+        Transaction tx=s.beginTransaction();
+        s.saveOrUpdate(teacher);
+        tx.commit();
+        s.close();
+        sf.close();
+
+    }
+
+    public void saveStudent(Student student){
+        SessionFactory sf = getSessionFactory();
+        Session s=sf.openSession();
+        Transaction tx=s.beginTransaction();
+        s.saveOrUpdate(student);
+        tx.commit();
+        s.close();
+        sf.close();
+
+
+    }
+
     public static SessionFactory getSessionFactory() {
         // loads configuration and mappings
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
