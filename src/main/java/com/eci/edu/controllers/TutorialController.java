@@ -22,11 +22,8 @@ public class TutorialController {
     InterfaceTeachers service1;
 
     @RequestMapping(method = RequestMethod.GET, value = "/tutores/{params}")
-    public ResponseEntity<?> getTutorials(@PathVariable String params){
-        System.out.println("cargando los teachers para un lenguaje especifico");
-//        return new ResponseEntity<>(services.getTutorialsByParams(params), HttpStatus.ACCEPTED);
-        System.out.println(service1.getTutores());
-        return new ResponseEntity<>(service1.getTutores(), HttpStatus.ACCEPTED);
+    public ResponseEntity<?> getTutorials(@PathVariable Integer id){
+        return new ResponseEntity<>(services.getTutorials(), HttpStatus.ACCEPTED);
     }
 
     @RequestMapping(method = RequestMethod.POST)

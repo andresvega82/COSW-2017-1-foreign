@@ -13,6 +13,6 @@ public interface InterfaceTutorials {
     public List<Tutorial> getTutorials();
     public void addTutorial (Tutorial t);
     public List<Tutorial> getTutorialByUserId(Integer id);
-
+    public List<Tutorial> getHistory(Integer id);
     public List<Teacher> getTutorialsByParams(String params);
 }

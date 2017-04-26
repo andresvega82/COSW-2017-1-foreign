@@ -39,7 +39,7 @@
                 <a href="#!perfil" ng-show="authenticated">Perfil</a>
               </li>
               <li ><a href="#!/viewMyTutories" ng-show="authenticated">Mis tutorias</a></li>
-              <li><a href="#" ng-show="authenticated">Historia</a></li>
+              <li><a href="#!viewMyHistory" ng-show="authenticated">Historia</a></li>
               <li class="break" ng-show="authenticated"><a href="#!/viewTutorial">Nueva Tutoria</a></li>
               <li><a ng-controller="appController" ng-click="logout()" ng-show="authenticated">Cerrar Sesion</a></li>
             </ul>
@@ -68,7 +68,7 @@
   <script src="login/login.js"></script>
   <script src="viewTutorial/scheduleTutorial.js"></script>
   <script src="viewMain/viewMain.js"></script>
-  <script src="viewHistory/viewHistory.js"></script>
+  <script src="viewMyHistory/viewMyHistory.js"></script>
   <script src="viewMyTutories/viewMyTutories.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>

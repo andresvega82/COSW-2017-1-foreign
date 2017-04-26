@@ -51,6 +51,11 @@ public class TutorialServicesImpl implements InterfaceTutorials{
     }
 
     @Override
+    public List<Tutorial> getHistory(Integer id) {
+        return null;//tutorialRepository.getHistoryById(id);
+    }
+
+    @Override
     public List<Teacher> getTutorialsByParams(String params){
 
         SessionFactory sf = getSessionFactory();

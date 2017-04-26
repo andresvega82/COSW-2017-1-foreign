@@ -34,6 +34,15 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
         }});
     })
 
+    //historial
+    .factory('history', function($resource) {
+            return $resource('/history',{},
+                { get: {
+                    method: 'GET',
+                    isArray: true
+            }});
+        })
+
     //tutores
     .factory('tutores', function($resource) {
         return $resource('/tutorial/tutores/:params',{params:"@_params"},

@@ -12,7 +12,7 @@ angular.module('myApp', [
   'myApp.searchTutor',
   'myApp.viewMyTutories',
   'myApp.scheduleTutorial',
-  'myApp.viewHistory',
+  'myApp.viewMyHistory',
   'services.fabricas',
   'myApp.version',
   'firebase'

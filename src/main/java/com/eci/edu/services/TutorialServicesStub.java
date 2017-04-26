@@ -38,6 +38,11 @@ public class TutorialServicesStub implements InterfaceTutorials {
     }
 
     @Override
+    public List<Tutorial> getHistory(Integer id) {
+        return null;
+    }
+
+    @Override
     public List<Teacher> getTutorialsByParams(String params) {
         return null;
     }
