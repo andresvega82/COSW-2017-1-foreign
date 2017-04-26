@@ -34,18 +34,35 @@ public class RegisterController {
         if (postObject.getIsStudent().equals("Estudiante")){
             Student student = new Student();
             StudentId studentId = new StudentId();
+            studentId.setUser_id(user.getUser_id());
+            studentId.setStudent_id(keyHash(user.getName()));
             student.setStudentid(studentId);
-            student.setStudentid(studentId);
+            student.setDescription("Description");
             handler.saveStudent(student);
         }else if(postObject.getIsStudent().equals("Profesor")){
             Teacher teacher= new Teacher();
             TeacherId teacherId = new TeacherId();
             teacherId.setUsers_user_id(user.getUser_id());
+            teacherId.setTeacher_id(keyHash(user.getName()));
             teacher.setUsers_user_id(teacherId);
+            teacher.setDescription("Description");
             handler.saveTeacher(teacher);
         }else{
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    int keyHash(String key)
+    {
+        int k = (int)key.length();
+        int u = 0,n = 0;
+
+        for (int i=0; i<k; i++)
+        {
+            n = (int)key.charAt(i);
+            u += i*n%31;
+        }
+        return u%139;
     }
 }
