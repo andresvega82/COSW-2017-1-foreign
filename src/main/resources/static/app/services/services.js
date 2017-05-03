@@ -36,7 +36,7 @@ angular.module('services.fabricas', ['ngRoute','ngResource'])
 
     //historial
     .factory('history', function($resource) {
-            return $resource('/history',{},
+            return $resource('/history',{username:"@username"},
                 { get: {
                     method: 'GET',
                     isArray: true

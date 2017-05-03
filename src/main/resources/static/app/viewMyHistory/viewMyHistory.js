@@ -9,9 +9,9 @@ angular.module('myApp.viewMyHistory', ['ngRoute'])
   });
 }])
 
-    .controller('viewMyHistoryCtrl',['$scope', 'history', function( $scope, history) {
+    .controller('viewMyHistoryCtrl',[ '$scope', 'history', function( $scope, history) {
+        history.query({username:localStorage.getItem("usuario")})
         $scope.histories = []
-
         history.get()
             .$promise.then(
                 //success

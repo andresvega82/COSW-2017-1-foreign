@@ -36,23 +36,22 @@ public class TutorialServicesImpl implements InterfaceTutorials{
 
     @Override
     public List<Tutorial> getTutorials() {
-
         return tutorialRepository.findAll();
     }
 
     @Override
     public void addTutorial(Tutorial t) {
-        tutorialRepository.save(t);
+        //tutorialRepository.save(t);
     }
 
     @Override
     public List<Tutorial> getTutorialByUserId(Integer id) {
-        return null;//service.findTutorialByUserId();
+        return null;//tutorialRepository.findTutorialByUserId();
     }
 
     @Override
-    public List<Tutorial> getHistory(Integer id) {
-        return null;//tutorialRepository.getHistoryById(id);
+    public List<Tutorial> getHistory(String id) {
+        return tutorialRepository.getHistoryById(id);
     }
 
     @Override

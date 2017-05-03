@@ -38,7 +38,7 @@ public class TutorialServicesStub implements InterfaceTutorials {
     }
 
     @Override
-    public List<Tutorial> getHistory(Integer id) {
+    public List<Tutorial> getHistory(String id) {
         return null;
     }
 

@@ -21,11 +21,10 @@ public class HistoryController {
     @Autowired
     InterfaceTutorials services;
 
-    @Autowired
-    InterfaceTeachers service1;
 
-    @RequestMapping(method = RequestMethod.GET, value = "/history")
-    public ResponseEntity<?> getTutorials(@PathVariable Integer id) {
-        return new ResponseEntity<>(services.getHistory(id), HttpStatus.ACCEPTED);
+
+    @RequestMapping(path = "/{username}",method = RequestMethod.GET)
+    public ResponseEntity<?> getTutorials(@PathVariable String username) {
+        return new ResponseEntity<>(services.getHistory(username), HttpStatus.ACCEPTED);
     }
 }
