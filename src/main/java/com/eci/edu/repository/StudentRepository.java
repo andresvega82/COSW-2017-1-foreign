@@ -14,8 +14,8 @@ import java.util.List;
  */
 public interface StudentRepository extends JpaRepository < Student, StudentId> {
 
-    @Query("from User as u where u.email = :email")
-    User getUsuario(@Param(value="email") String email);
+    @Query("from User as u where u.user_id = :id")
+    User getUsuario(@Param(value="id") String id);
 
     /*@Query("from Students s where s.student_id= :userId ")
     public Student getClientePorId(@Param(value = "userId")String userId);

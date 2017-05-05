@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.nio.charset.Charset;
+
 /**
  * Created by Nicolas M on 17/03/2017.
  */
@@ -29,6 +31,7 @@ public class RegisterController {
         CreditCard creditCard = new CreditCard(postObject.getPaymentId(), postObject.getCardNumber(), postObject.getExpirationDate(), postObject.getPostalCode(), postObject.getCvv());
         User user = new User(postObject.getUser_id(), postObject.getName(),postObject.getLastName(),postObject.getEmail(), postObject.getPhone(), postObject.getCountry(), postObject.getAge(),creditCard.getPaymentId());
         user.setLastName(postObject.getLastName());
+        user.setPhoto( new javax.sql.rowset.serial.SerialBlob(postObject.getPhoto().getBytes(Charset.forName("UTF-8"))));
         handler.saveCreditCard(creditCard);
         handler.saveUser(user);
         if (postObject.getIsStudent().equals("Estudiante")){
@@ -37,7 +40,7 @@ public class RegisterController {
             studentId.setUser_id(user.getUser_id());
             studentId.setStudent_id(keyHash(user.getName()));
             student.setStudentid(studentId);
-            student.setDescription("Description");
+            student.setDescription(user.getName()+" "+user.getLastName());
             handler.saveStudent(student);
         }else if(postObject.getIsStudent().equals("Profesor")){
             Teacher teacher= new Teacher();
@@ -45,7 +48,7 @@ public class RegisterController {
             teacherId.setUsers_user_id(user.getUser_id());
             teacherId.setTeacher_id(keyHash(user.getName()));
             teacher.setUsers_user_id(teacherId);
-            teacher.setDescription("Description");
+            teacher.setDescription(user.getName()+" "+user.getLastName());
             handler.saveTeacher(teacher);
         }else{
             return new ResponseEntity<>(HttpStatus.CONFLICT);

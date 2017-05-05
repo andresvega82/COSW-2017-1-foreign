@@ -3,6 +3,7 @@ com\eci\edu\repository\TutorialRepository.class
 com\eci\edu\repository\StudentRepository.class
 com\eci\edu\services\InterfaceTeachers.class
 com\eci\edu\services\InterfaceStudents.class
+com\eci\edu\controllers\HistoryController.class
 com\eci\edu\entities\Tutorial.class
 com\eci\edu\entities\TeacherId.class
 com\eci\edu\entities\Languaje.class

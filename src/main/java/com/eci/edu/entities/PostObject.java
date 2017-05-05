@@ -19,6 +19,7 @@ public class PostObject implements Serializable{
     private String phone;
     private String country;
     private Integer age;
+    private String photo;
     PostObject(){
 
     }
@@ -128,6 +129,14 @@ public class PostObject implements Serializable{
         this.age = age;
     }
 
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
     @Override
     public String toString() {
         return "PostObject{" +
@@ -143,6 +152,7 @@ public class PostObject implements Serializable{
                 ", phone='" + phone + '\'' +
                 ", country='" + country + '\'' +
                 ", age=" + age +
+                ", photo="+photo+
                 '}';
     }
 }
