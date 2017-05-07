@@ -35,7 +35,6 @@ public class StudentServicesImpl implements InterfaceStudents{
     @Override
     public User  getUserPorId (String nombre) {;
         try {
-            nombre+=".com";
             User u = repositorio.getUsuario(nombre);
             System.out.println(u.toString());
         }catch (Exception e){
