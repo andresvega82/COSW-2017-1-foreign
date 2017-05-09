@@ -31,7 +31,7 @@ public class RegisterController {
         CreditCard creditCard = new CreditCard(postObject.getPaymentId(), postObject.getCardNumber(), postObject.getExpirationDate(), postObject.getPostalCode(), postObject.getCvv());
         User user = new User(postObject.getUser_id(), postObject.getName(),postObject.getLastName(),postObject.getEmail(), postObject.getPhone(), postObject.getCountry(), postObject.getAge(),creditCard.getPaymentId());
         user.setLastName(postObject.getLastName());
-        user.setPhoto( new javax.sql.rowset.serial.SerialBlob(postObject.getPhoto().getBytes(Charset.forName("UTF-8"))));
+        //user.setPhoto( new javax.sql.rowset.serial.SerialBlob(postObject.getPhoto().getBytes(Charset.forName("UTF-8"))));
         handler.saveCreditCard(creditCard);
         handler.saveUser(user);
         if (postObject.getIsStudent().equals("Estudiante")){

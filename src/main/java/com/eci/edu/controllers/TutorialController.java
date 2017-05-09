@@ -23,6 +23,13 @@ public class TutorialController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/tutores/{params}")
     public ResponseEntity<?> getTutorials(@PathVariable Integer id){
+        System.out.println("ENTRA AL GET");
+        //System.out.println("Get "+services.getTutorials());
+        return new ResponseEntity<>(null, HttpStatus.ACCEPTED);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/tutoresMobile")
+    public ResponseEntity<?> getTutoriaslMobile(){
         return new ResponseEntity<>(services.getTutorials(), HttpStatus.ACCEPTED);
     }
 
