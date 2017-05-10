@@ -3,6 +3,7 @@ com/eci/edu/entities/CreditCard.class
 com/eci/edu/services/TeacherServicesStub.class
 com/eci/edu/controllers/HistoryController.class
 com/eci/edu/repository/TutorialRepository.class
+com/eci/edu/entities/TutorialByStudent.class
 com/eci/edu/entities/TutorialId.class
 com/eci/edu/entities/PostObject.class
 com/eci/edu/entities/Student.class
@@ -18,6 +19,7 @@ com/eci/edu/services/StudentServicesStub.class
 com/eci/edu/entities/TeacherId.class
 com/eci/edu/controllers/RegisterController.class
 com/eci/edu/controllers/TutorialController.class
+com/eci/edu/entities/TutorialByStudentId.class
 com/eci/edu/services/InterfaceTeachers.class
 com/eci/edu/services/InterfaceTutorials.class
 com/eci/edu/services/TeacherServicesImpl.class

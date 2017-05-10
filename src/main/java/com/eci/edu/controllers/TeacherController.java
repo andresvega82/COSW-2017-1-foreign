@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/tutores")
 public class TeacherController {
-
     @Autowired
     private InterfaceTeachers service;
 
@@ -27,5 +26,5 @@ public class TeacherController {
         return new ResponseEntity<>(service.getTutorById(id), HttpStatus.ACCEPTED);
     }
 
-    
+
 }
