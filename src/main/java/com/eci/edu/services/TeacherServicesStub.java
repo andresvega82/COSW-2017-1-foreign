@@ -1,6 +1,7 @@
 package com.eci.edu.services;
 
 import com.eci.edu.entities.Teacher;
+import com.eci.edu.entities.User;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -37,6 +38,11 @@ public class TeacherServicesStub implements InterfaceTeachers {
     @Override
     public void addTutor (Teacher t){
         tutores.add(t);
+    }
+
+    @Override
+    public User getTutorById(Integer id) {
+        return null;
     }
 
 }

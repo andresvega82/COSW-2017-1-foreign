@@ -1,29 +1,29 @@
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\InterfaceTutorials.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\RegisterController.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\PostObject.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Student.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\StudentServicesImpl.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\InterfaceStudents.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\repository\TeacherRepository.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\HistoryController.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\TutorialId.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\CreditCard.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Languaje.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\TeacherServicesStub.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\UserServicesStub.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\TeacherController.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\StudentServicesStub.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\InterfaceTeachers.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\TeacherId.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\repository\StudentRepository.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\StudentsController.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\repository\TutorialRepository.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\TutorialServicesStub.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\StudentId.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\User.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\TeacherServicesImpl.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Teacher.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\controllers\TutorialController.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\entities\Tutorial.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\CoswApplication.java
-C:\Users\TaTo\Documents\Universidad\Semestre 9\COSW\Proyecto\COSW-2017-1-foreign\src\main\java\com\eci\edu\services\TutorialServicesImpl.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Tutorial.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Languaje.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/RegisterController.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Student.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/HistoryController.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/TutorialServicesImpl.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/UserServicesStub.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/TeacherServicesImpl.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/StudentId.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/StudentsController.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/TutorialServicesStub.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/InterfaceStudents.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/CoswApplication.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/TutorialController.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/User.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/InterfaceTeachers.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/PostObject.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/controllers/TeacherController.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/repository/TutorialRepository.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/repository/TeacherRepository.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/repository/StudentRepository.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/TutorialId.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/CreditCard.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/TeacherServicesStub.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/TeacherId.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/StudentServicesStub.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/entities/Teacher.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/StudentServicesImpl.java
+/home/local/LABINFO/2099340/Desktop/COSW-2017-1-foreign/src/main/java/com/eci/edu/services/InterfaceTutorials.java
