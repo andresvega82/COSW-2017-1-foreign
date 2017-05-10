@@ -50,9 +50,6 @@ public class StudentServicesStub implements InterfaceStudents {
         return true;
     }
 
-    @Override
-    public List<Tutorial> getTutoriasByStudent(String user) {
-        return null;
-    }
+
 }
 

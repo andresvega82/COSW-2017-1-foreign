@@ -17,5 +17,4 @@ public interface InterfaceStudents {
     Student getClientePorId(Integer id);
     public User  getUserPorId (String nombre);
     boolean registerUser (User user);
-    public List<Tutorial> getTutoriasByStudent(String user);
 }
