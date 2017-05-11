@@ -12,6 +12,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import java.sql.Blob;
+
 /**
  * Created by Nicolas M on 17/03/2017.
  */
@@ -61,6 +63,18 @@ public class UserServicesStub {
         sf.close();
 
 
+    }
+
+    public void addPhoto(Blob blob,String id){
+        SessionFactory sf=getSessionFactory();
+        Session s=sf.openSession();
+        Transaction tx=s.beginTransaction();
+        User o = (User) s.get(User.class, id);
+        o.setPhoto(blob);
+        s.saveOrUpdate(o);
+        tx.commit();
+        s.close();
+        sf.close();
     }
 
     public static SessionFactory getSessionFactory() {

@@ -6,12 +6,11 @@ import com.eci.edu.services.UserServicesStub;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.nio.charset.Charset;
+import java.sql.Blob;
+import java.util.Base64;
 
 /**
  * Created by Nicolas M on 17/03/2017.
@@ -31,7 +30,7 @@ public class RegisterController {
         CreditCard creditCard = new CreditCard(postObject.getPaymentId(), postObject.getCardNumber(), postObject.getExpirationDate(), postObject.getPostalCode(), postObject.getCvv());
         User user = new User(postObject.getUser_id(), postObject.getName(),postObject.getLastName(),postObject.getEmail(), postObject.getPhone(), postObject.getCountry(), postObject.getAge(),creditCard.getPaymentId());
         user.setLastName(postObject.getLastName());
-        user.setPhoto( new javax.sql.rowset.serial.SerialBlob(postObject.getPhoto().getBytes(Charset.forName("UTF-8"))));
+        //user.setPhoto( new javax.sql.rowset.serial.SerialBlob(postObject.getPhoto().getBytes(Charset.forName("UTF-8"))));
         handler.saveCreditCard(creditCard);
         handler.saveUser(user);
         if (postObject.getIsStudent().equals("Estudiante")){
@@ -53,7 +52,7 @@ public class RegisterController {
         }else{
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(user.getUser_id(),HttpStatus.CREATED);
     }
 
     int keyHash(String key)
@@ -67,5 +66,17 @@ public class RegisterController {
             u += i*n%31;
         }
         return u%139;
+    }
+
+
+    @RequestMapping(value="/addUserPhoto/{user_id}",method = RequestMethod.POST)
+    public ResponseEntity<?> addUserPhoto(@PathVariable String user_id, @RequestBody PostPhoto postObject) throws Exception {
+        System.out.println(postObject.getPhoto()+"  SAPO");
+        /**
+        byte[] bt = Base64.getDecoder().decode(postObject.getPhoto());
+        Blob blop = new javax.sql.rowset.serial.SerialBlob(bt);
+        handler.addPhoto(blop,user_id);
+         **/
+        return new ResponseEntity<>(null,HttpStatus.CREATED);
     }
 }
