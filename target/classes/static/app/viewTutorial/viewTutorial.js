@@ -32,6 +32,8 @@ angular.module('myApp.viewTutorial', ['ngRoute'])
                             });*/
 
                         var consulta = {params: $scope.languaje}
+
+                        //console.log("buscar tutorias")
                         tutores.get(consulta)
                             .$promise.then(
                             //success

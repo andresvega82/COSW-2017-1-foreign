@@ -1,9 +1,11 @@
 package com.eci.edu.services;
 
 import com.eci.edu.entities.Student;
+import com.eci.edu.entities.Tutorial;
 import com.eci.edu.entities.User;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by 2098165 on 2/16/17.

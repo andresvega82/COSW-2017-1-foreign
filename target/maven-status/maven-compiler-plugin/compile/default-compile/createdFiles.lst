@@ -4,11 +4,9 @@ com\eci\edu\repository\StudentRepository.class
 com\eci\edu\services\InterfaceTeachers.class
 com\eci\edu\services\InterfaceStudents.class
 com\eci\edu\controllers\HistoryController.class
-com\eci\edu\entities\Tutorial.class
 com\eci\edu\entities\TeacherId.class
 com\eci\edu\entities\Languaje.class
 com\eci\edu\entities\Teacher.class
-com\eci\edu\entities\User.class
 com\eci\edu\services\StudentServicesStub.class
 com\eci\edu\controllers\RegisterController.class
 com\eci\edu\controllers\TeacherController.class
@@ -21,7 +19,6 @@ com\eci\edu\controllers\StudentsController.class
 com\eci\edu\entities\Student.class
 com\eci\edu\services\UserServicesStub.class
 com\eci\edu\repository\TeacherRepository.class
-com\eci\edu\CoswApplication.class
 com\eci\edu\services\TutorialServicesStub.class
 com\eci\edu\entities\StudentId.class
 com\eci\edu\services\TeacherServicesImpl.class

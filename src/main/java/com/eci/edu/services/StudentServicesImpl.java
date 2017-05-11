@@ -1,12 +1,13 @@
 package com.eci.edu.services;
 
-import com.eci.edu.entities.Student;
-import com.eci.edu.entities.User;
+import com.eci.edu.entities.*;
 import com.eci.edu.repository.StudentRepository;
+import com.eci.edu.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tata on 23/03/17.
@@ -16,6 +17,10 @@ public class StudentServicesImpl implements InterfaceStudents{
 
     @Autowired
     private StudentRepository repositorio;
+
+    
+    @Autowired
+    private TutorialRepository tutorialRepository;
 
     @Override
     public void registrarCliente(Student student) {
@@ -48,4 +53,6 @@ public class StudentServicesImpl implements InterfaceStudents{
     public boolean registerUser(User user) {
         return false;
     }
+
+
 }

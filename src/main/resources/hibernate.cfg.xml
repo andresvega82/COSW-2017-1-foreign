@@ -16,7 +16,6 @@
         <mapping class="com.eci.edu.entities.CreditCard"/>
         <mapping class="com.eci.edu.entities.Languaje"/>
         <mapping class="com.eci.edu.entities.Student"/>
-
         <mapping class="com.eci.edu.entities.Teacher"/>
         <mapping class="com.eci.edu.entities.Tutorial"/>
 
